@@ -37,7 +37,8 @@ header .container nav ul li a {
 
 .s-projectos .container .principal {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 .s-projectos .container .principal .texto-principal {
   display: flex;
@@ -233,7 +234,7 @@ header .container nav ul li a {
 }
 .s-conhecimentos .container .texto-obs .container {
   display: flex;
-  width: 90%;
+  width: 50%;
   background: #f87171;
   justify-content: center;
   align-items: center;
@@ -535,7 +536,7 @@ footer .texto-bottom p {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background: #041953;
+  background: rgb(29, 78, 216);
 }
 
 body * {

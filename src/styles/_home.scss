@@ -2,7 +2,8 @@
     .container{
         .principal{
             width: 100%;
-            margin-top: 70px;
+            margin-top: 50px;
+            margin-bottom: 100px;
             .texto-principal{
                 display: flex;
                 justify-content: center;
@@ -204,7 +205,7 @@
             animation: textoError 6S ease-in-out infinite;
             .container{
                 display: flex;
-                width: 90%;
+                width: 50%;
                 background: #f87171;
                 justify-content: center;
                 align-items: center;
