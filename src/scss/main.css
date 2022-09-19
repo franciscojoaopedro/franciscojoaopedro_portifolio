@@ -3,7 +3,7 @@ header {
   top: 0;
   padding: 15px;
   width: 100%;
-  background-color: #67e8f9;
+  background-color: #34d399;
   opacity: 1;
   box-shadow: 1px 3px 12px #2a353a;
   position: fixed;
@@ -310,7 +310,7 @@ footer .texto-bottom {
   margin-top: 20px;
   width: 100%;
   max-width: 100%;
-  background: #0e7490;
+  background: #34d399;
   justify-content: center;
   align-items: center;
 }
@@ -326,7 +326,7 @@ footer .texto-bottom p {
   padding: 10px;
   border-radius: 7px;
   background: #22d3ee;
-  color: rgba(255, 255, 255, 0.8549019608);
+  color: #fff;
   box-shadow: 1px 3px 12px #2a353a;
   outline: none;
 }
@@ -471,6 +471,11 @@ footer .texto-bottom p {
   word-wrap: break-word;
   font-size: 16px;
   color: #fff;
+}
+
+.barra {
+  height: 300px;
+  border-right: 5px solid white;
 }
 
 * {

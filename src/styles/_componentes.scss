@@ -3,7 +3,7 @@
     padding: 10px;
     border-radius: 7px;
     background: #22d3ee;
-    color:#ffffffda;
+    color:#fff;
     box-shadow: 1px 3px 12px #2a353a;
     outline: none;
     &:hover{
@@ -147,4 +147,9 @@
             color: #fff;
         }
     }
+}
+
+.barra{
+    height: 300px;
+    border-right: 5px solid white;
 }
