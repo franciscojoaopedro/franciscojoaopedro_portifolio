@@ -1,0 +1,29 @@
+footer{
+    padding: 40px 0px 0px 0px;
+    background: #22d3ee;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    .footer-box{
+        h2{
+            color: $Gray-300;
+        }
+        .social{
+            right: 200px;
+            ul{
+           }
+        }
+    }
+    .texto-bottom{
+        top: 20px;
+        width: 100%;
+        max-width: 100%;
+        background: #1e293b;
+        p{
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+    }
+}

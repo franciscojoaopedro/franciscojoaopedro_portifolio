@@ -1,0 +1,31 @@
+header{
+    padding: 15px;
+    width: 100%;
+    background:#0369a1;
+    box-shadow: 1px 3px 12px #2a353a;
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: #fff;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    margin: 0px 20px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
