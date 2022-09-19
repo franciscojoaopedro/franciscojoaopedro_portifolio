@@ -244,7 +244,7 @@ header .container nav ul li a {
 }
 .s-conhecimentos .container .texto-obs .container {
   display: flex;
-  width: 1000px;
+  width: 90%;
   background: #f87171;
   justify-content: center;
   align-items: center;
@@ -260,6 +260,31 @@ header .container nav ul li a {
   word-wrap: break-word;
   letter-spacing: 2px;
   color: #fff;
+}
+.s-conhecimentos .container .card-experiencia {
+  margin-top: 20px;
+}
+.s-conhecimentos .container .card-experiencia .texto-eperiencia {
+  width: 100%;
+  height: 50px;
+  background: #0c4a6e;
+  box-shadow: 1px 2px 8px rgba(12, 74, 110, 0.431372549);
+  border-radius: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-conhecimentos .container .card-experiencia .texto-eperiencia h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 10px;
+}
+.s-conhecimentos .container .card-experiencia .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -338,6 +363,114 @@ footer .texto-bottom p {
   border-radius: 0px 10px 10px 0px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.card-empresa {
+  width: 100%;
+  height: 200px;
+  background: #22d3ee;
+  box-shadow: 1px 2px 8px #0c4a6e;
+  border-radius: 0px 10px 10px 0px;
+  padding: 15px;
+  margin: 20px;
+  color: #fff;
+  border-left: 10px solid #fff;
+}
+.card-empresa h2 {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  background: #0c4a6e;
+  box-shadow: 1px 2px 8px #0c4a6e;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.card-empresa h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #cffafe;
+  margin-bottom: 10px;
+}
+.card-empresa p {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.contactos {
+  width: 100%;
+  background: #d4d4d8;
+  box-shadow: 1px 2px 8px #0c4a6e;
+  border-radius: 10px 10px 10px 0px;
+  padding: 15px;
+  margin: 15px;
+}
+.contactos h2 {
+  margin-top: 10px;
+  padding: 5px;
+  background: #0c4a6e;
+  box-shadow: 1px 2px 8px #335163;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.contactos ul {
+  background: #2563eb;
+  box-shadow: 1px 2px 8px #335163;
+  border-radius: 10px 10px 10px 0px;
+  padding: 15px;
+}
+.contactos ul li {
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+.contactos ul li a {
+  text-align: start;
+  font-weight: 700;
+  color: #fff;
+}
+
+.mensagem {
+  width: 100%;
+  background: #d4d4d8;
+  box-shadow: 1px 2px 8px #0c4a6e;
+  border-radius: 10px 10px 10px 0px;
+  padding: 15px;
+  margin: 15px;
+}
+.mensagem h2 {
+  margin-top: 10px;
+  padding: 5px;
+  background: #0c4a6e;
+  box-shadow: 1px 2px 8px #335163;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.mensagem .sms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #2563eb;
+  box-shadow: 1px 2px 8px #335163;
+  border-radius: 0px 10px 0px 10px;
+  width: 100%;
+}
+.mensagem .sms p {
+  margin: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 16px;
+  color: #fff;
 }
 
 * {

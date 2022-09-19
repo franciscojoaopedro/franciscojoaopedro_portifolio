@@ -41,3 +41,110 @@
     color: #fff;
     text-transform: uppercase;
 }
+
+.card-empresa{
+    width: 100%;
+    height: 200px;
+    background: #22d3ee;
+    box-shadow: 1px 2px 8px #0c4a6e;
+    border-radius: 0px 10px 10px 0px;
+    padding: 15px;
+    margin: 20px;
+    color: #fff;
+    border-left: 10px solid #fff;
+    h2{
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+        background: #0c4a6e;
+        box-shadow: 1px 2px 8px #0c4a6e;
+        border-radius: 0px 10px 10px 0px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h3{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #cffafe;
+        margin-bottom: 10px;
+    }
+    p{
+        text-align: start;
+        font-size: 16px;
+        font-weight: 700;
+        color: #2563eb;
+    }
+}
+
+.contactos{
+    width: 100%;
+    background: #d4d4d8;
+    box-shadow: 1px 2px 8px #0c4a6e;
+    border-radius: 10px 10px 10px 0px;
+    padding: 15px;
+    margin: 15px;
+    h2{
+        margin-top: 10px;
+        padding: 5px;
+        background: #0c4a6e;
+        box-shadow: 1px 2px 8px #335163;
+        border-radius: 0px 10px 10px 0px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    ul{
+        background: #2563eb;
+        box-shadow: 1px 2px 8px #335163;
+        border-radius: 10px 10px 10px 0px;
+        padding: 15px;
+        li{
+            color: #fff;
+            font-size: 16px;
+            display: flex;
+            align-items: flex-end;
+            a{
+                text-align: start;
+                font-weight: 700;
+                color: #fff;   
+            }
+        }
+    }
+}
+.mensagem{
+    width: 100%;
+    background: #d4d4d8;
+    box-shadow: 1px 2px 8px #0c4a6e;
+    border-radius: 10px 10px 10px 0px;
+    padding: 15px;
+    margin: 15px;
+    h2{
+        margin-top: 10px;
+        padding: 5px;
+        background: #0c4a6e;
+        box-shadow: 1px 2px 8px #335163;
+        border-radius: 0px 10px 10px 0px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .sms{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: #2563eb;
+        box-shadow: 1px 2px 8px #335163;
+        border-radius: 0px 10px 0px 10px;
+        width: 100%;
+        p{
+            margin: 10px;
+            text-align: center;
+            word-wrap: break-word;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+}
