@@ -12,14 +12,27 @@
                 .texto{
                     width: 100%;
                     max-width: 500px;
+                    background: #0ea5e9;
+                    border-radius: 0px 10px 10px 0px;
+                    box-shadow: 1px 2px 8px #0c4a6e;
+                    padding: 15px;
+                    margin: 20px;
                     h2{
-                        color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: justify;
+                    line-height: 20px;
+                    word-wrap: break-word;
+                    letter-spacing: 1px;
+                    color: #fff;
                     }
                 }
                 .image{
                     width: 100%;
-                   max-width: 500px;
+                    max-width: 500px;
                     display: flex;
+                    margin: 20px;
                     img{
                       margin-top: 80px;
                       align-items: center;
@@ -204,11 +217,7 @@
                     word-wrap: break-word;
                     letter-spacing: 2px;
                     color: #fff;
-                    strong{
-                        display: flex;
-                        flex-direction: row;
-                        color: #34d399;
-                    }
+                   
                 }
             }
 
