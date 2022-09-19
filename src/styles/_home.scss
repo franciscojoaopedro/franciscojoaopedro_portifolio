@@ -85,8 +85,10 @@
     }
 }
 .s-conhecimentos{
-    position: relative;
+    width: 100%;
     margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
     .container{
         .texto-conhecimento{
             width:100%;
@@ -114,15 +116,13 @@
             margin-top: 20px;
             margin-bottom: 70px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
-
-
-            .hard-skills,.soft-skills{
+            .hard-skills{
                 padding: 10px;
                 width: 100%;
                 max-width: 400px;
-                background: #38bdf8;
+                background: #67e8f9;
                 border-radius: 10px;
                 box-shadow: 2px 3px 20px #0c4a6e;
                 border-left: 10px solid white ;
@@ -130,7 +130,7 @@
                 align-items: center;
                 .texto-skills{
                     width:100%;
-                    background: #5eead4;
+                    background: #0f172a;
                     border-radius: 10px 0px 10px 0px;
                     box-shadow: 2px 3px 10px #0c4a6e;
                     align-items: center;
@@ -150,6 +150,69 @@
                 }
             }
 
+            .soft-skills{
+                padding: 10px;
+                width: 100%;
+                max-width: 400px;
+                background: #67e8f9;
+                border-radius: 10px;
+                box-shadow: 2px 3px 20px #0c4a6e;
+                border-left: 10px solid white ;
+                justify-content: space-between;
+                align-items: center;
+                .texto-skills{
+                    width:100%;
+                    background: #111827;
+                    border-radius: 10px 0px 10px 0px;
+                    box-shadow: 2px 3px 10px #0c4a6e;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                h2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    height: 50px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    display: flex;
+                    letter-spacing: 10px;
+                }
+            }
+
+        }
+        .texto-obs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                display: flex;
+                width: 1000px;
+                background: #f87171;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 1px 2px 8px #0c4a6e;
+                border-radius: 10px 0px 10px 0px;
+                padding: 15px;
+                p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: justify;
+                    word-wrap: break-word;
+                    letter-spacing: 2px;
+                    color: #fff;
+                    strong{
+                        display: flex;
+                        flex-direction: row;
+                        color: #34d399;
+                    }
+                }
+            }
+
+           
         }
     }
 }
