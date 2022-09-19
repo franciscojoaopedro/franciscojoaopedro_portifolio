@@ -5,7 +5,7 @@ header {
   width: 100%;
   background-color: #0ea5e9;
   opacity: 1;
-  box-shadow: 1px 3px 12px #2a353a;
+  box-shadow: 1px 3px 7px #2a353a;
   position: fixed;
   z-index: 100;
 }
@@ -313,8 +313,7 @@ footer .texto-bottom p {
   padding: 10px;
   border-radius: 7px;
   background: #22d3ee;
-  color: #fff;
-  box-shadow: 1px 3px 12px #2a353a;
+  box-shadow: 1px 3px 7px rgba(42, 53, 58, 0.4784313725);
   outline: none;
 }
 .btn-header:hover {
