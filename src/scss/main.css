@@ -1,68 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 header {
+  top: 0;
   padding: 15px;
   width: 100%;
-  background: #0369a1;
+  background-color: #67e8f9;
+  opacity: 1;
   box-shadow: 1px 3px 12px #2a353a;
+  position: fixed;
+  z-index: 100;
 }
-header nav {
+header .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  align-items: flex-start;
+  width: 200px;
+  background: #34d399;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 2px 3px 10px #0c4a6e;
+}
+header .container .logo .texto-logo {
   justify-content: center;
   align-items: center;
-}
-header nav h1 {
+  color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 32px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  letter-spacing: 10px;
+}
+header .container nav h1 {
   color: #fff;
 }
-header nav ul {
+header .container nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul li {
+header .container nav ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul li a {
+header .container nav ul li a {
   margin: 0px 20px;
   color: #fff;
 }
 
-main .container .principal {
+.s-projectos .container .principal {
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 70px;
 }
-main .container .principal .texto-principal {
+.s-projectos .container .principal .texto-principal {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
   gap: 32px;
 }
-main .container .principal .texto-principal .texto {
+.s-projectos .container .principal .texto-principal .texto {
   width: 100%;
   max-width: 500px;
 }
-main .container .principal .texto-principal .texto h2 {
+.s-projectos .container .principal .texto-principal .texto h2 {
   color: #fff;
 }
-main .container .principal .texto-principal .image {
+.s-projectos .container .principal .texto-principal .image {
   width: 100%;
   max-width: 500px;
   display: flex;
 }
-main .container .principal .texto-principal .image img {
+.s-projectos .container .principal .texto-principal .image img {
   margin-top: 80px;
   align-items: center;
   justify-content: center;
 }
-main .container .projectos {
-  margin-bottom: 100px;
+.s-projectos .container .projectos {
+  position: relative;
+  width: 100%;
 }
-main .container .projectos .texto-projectos {
+.s-projectos .container .projectos .texto-projectos {
   width: 100%;
   height: 50px;
   background: #2563eb;
@@ -72,52 +92,132 @@ main .container .projectos .texto-projectos {
   align-items: center;
   justify-content: center;
 }
-main .container .projectos .texto-projectos h2 {
-  text-align: center;
+.s-projectos .container .projectos .texto-projectos h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  letter-spacing: 10px;
 }
-main .container .projectos .lista-projectos {
+.s-projectos .container .projectos .lista-projectos {
   width: 100%;
   height: 500px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
-main .container .projectos .lista-projectos .card .image-card {
+.s-projectos .container .projectos .lista-projectos .card .image-card {
   width: 80%;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .container .projectos .lista-projectos .card .image-card img {
+.s-projectos .container .projectos .lista-projectos .card .image-card img {
   width: 300px;
 }
-main .container .projectos .lista-projectos .card a {
+.s-projectos .container .projectos .lista-projectos .card a {
   position: absolute;
   bottom: 0;
   text-align: center;
 }
 
+.s-conhecimentos {
+  position: relative;
+  margin-top: 20px;
+}
+.s-conhecimentos .container .texto-conhecimento {
+  width: 100%;
+  background: #34d399;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 2px 3px 10px #0c4a6e;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.s-conhecimentos .container .texto-conhecimento h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  letter-spacing: 10px;
+}
+.s-conhecimentos .container .skills {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.s-conhecimentos .container .skills .hard-skills, .s-conhecimentos .container .skills .soft-skills {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  background: #38bdf8;
+  border-radius: 10px;
+  box-shadow: 2px 3px 20px #0c4a6e;
+  border-left: 10px solid white;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-conhecimentos .container .skills .hard-skills .texto-skills, .s-conhecimentos .container .skills .soft-skills .texto-skills {
+  width: 100%;
+  background: #5eead4;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 2px 3px 10px #0c4a6e;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.s-conhecimentos .container .skills .hard-skills h2, .s-conhecimentos .container .skills .soft-skills h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  letter-spacing: 10px;
+}
+
 footer {
   padding: 40px 0px 0px 0px;
-  background: #22d3ee;
+  background: #1e293b;
   position: relative;
   bottom: 0;
   width: 100%;
 }
-footer .footer-box h2 {
-  color: #d1d5db;
+footer .container {
+  display: flex;
+  justify-content: space-around;
 }
-footer .footer-box .social {
-  right: 200px;
+footer .container .social h2 {
+  color: #fff;
+  text-align: center;
+}
+footer .container .social nav ul li a {
+  color: #fff;
+  margin: 5px;
 }
 footer .texto-bottom {
-  top: 20px;
+  margin-top: 20px;
   width: 100%;
   max-width: 100%;
-  background: #1e293b;
+  background: #0e7490;
+  justify-content: center;
+  align-items: center;
 }
 footer .texto-bottom p {
   padding: 15px;
@@ -130,12 +230,15 @@ footer .texto-bottom p {
   width: 100%;
   padding: 10px;
   border-radius: 7px;
-  background: #67e8f9;
+  background: #22d3ee;
   color: rgba(255, 255, 255, 0.8549019608);
+  box-shadow: 1px 3px 12px #2a353a;
+  outline: none;
 }
 .btn-header:hover {
-  background: rgba(255, 255, 255, 0.6431372549);
-  color: #67e8f9;
+  border-bottom: 5px solid #22d3ee;
+  background: #fff;
+  color: #22d3ee;
 }
 
 .card {
@@ -143,12 +246,20 @@ footer .texto-bottom p {
   position: relative;
   margin: 2px;
   width: 100%;
-  height: 300px;
+  height: 200px;
   background: #38bdf8;
   border-radius: 10px;
   box-shadow: 2px 3px 10px #0c4a6e;
   display: flex;
   justify-content: center;
+}
+
+.btn-skills {
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  height: 30px;
+  background: #2a353a;
+  color: #fff;
 }
 
 * {

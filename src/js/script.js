@@ -1,11 +1,5 @@
 const token="​nkXqdVdcTQAcWulaSu8G1CLE​"
 
-var swiper = new Swiper(".lista-projectos", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 const option={
     headers:{
         Authorization: `Bearer <${token}>`
