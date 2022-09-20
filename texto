@@ -1,1 +1,35 @@
 Não tenho experencia de trabalho como programador Front-End e nem Back End. Até ao momento,tenho estudado e aplicando na prática aquilo que tenho aprendido durante os meus estudos. Atualmente tenho feito projectos e também procurando uma vaga de programador júnior ,e (estágios).
+
+
+
+
+
+ padding: 10px;
+                width: 100%;
+                max-width: 400px;
+                background: #fffffe;
+                border-radius: 10px;
+                box-shadow: 2px 3px 8px  #e2e8f0;
+                border-left: 10px solid $Emerald-400 ;
+                justify-content: space-between;
+                align-items: center;
+                .texto-skills{
+                    width:100%;
+                    background: $Emerald-500;
+                    border-radius: 10px 0px 10px 0px;
+                    box-shadow: 2px 3px 10px #e2e8f0;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                h2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    height: 50px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    display: flex;
+                    letter-spacing: 10px;
+                }

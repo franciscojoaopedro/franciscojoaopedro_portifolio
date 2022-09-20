@@ -100,27 +100,27 @@ header .container nav ul li a {
   color: #fff;
 }
 
-.s-projectos {
+.s-projectos .container {
   margin-top: 200px;
   width: 100%;
 }
-.s-projectos .texto-projectos {
-  width: 50%;
+.s-projectos .container .texto-projectos {
+  width: 100%;
   height: 50px;
-  background: #047857;
-  box-shadow: 1px 2px 8px #064e3b;
-  border-radius: 10px;
+  background: #10b981;
+  box-shadow: 1px 2px 8px #e2e8f0;
+  border-radius: 0px 10px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   border-left: 8px solid #fff;
 }
-.s-projectos .texto-projectos h2 {
+.s-projectos .container .texto-projectos h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #fffffe;
   height: 50px;
   border-radius: 10px;
   font-weight: 700;
@@ -128,51 +128,51 @@ header .container nav ul li a {
   display: flex;
   letter-spacing: 2px;
 }
-.s-projectos .lista-projectos .card {
+.s-projectos .container .lista-projectos .card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.s-projectos .lista-projectos .card .project-description {
+.s-projectos .container .lista-projectos .card .project-description {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 250px;
-  background: #34d399;
-  box-shadow: 1px 2px 8px #064e3b;
+  background: #fffffe;
+  box-shadow: 1px 2px 8px #e2e8f0;
   border-radius: 0px 10px 10px 0px;
   padding: 15px;
   color: #fff;
   border-right: 10px solid #fff;
 }
-.s-projectos .lista-projectos .card .project-description h2 {
+.s-projectos .container .lista-projectos .card .project-description h2 {
   margin-top: 10px;
   width: 100%;
   padding: 5px;
-  background: #059669;
+  background: #10b981;
   box-shadow: 1px 2px 8px #047857;
   border-radius: 0px 10px 10px 0px;
   font-size: 18px;
   margin-bottom: 10px;
   text-align: center;
 }
-.s-projectos .lista-projectos .card .project-description h3 {
+.s-projectos .container .lista-projectos .card .project-description h3 {
   margin-top: 20px;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  color: #d1fae5;
+  color: #1e293b;
   text-align: justify;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.s-projectos .lista-projectos .card .project-description a {
+.s-projectos .container .lista-projectos .card .project-description a {
   position: absolute;
-  width: 50%;
+  width: 100%;
   bottom: 0;
   text-align: center;
   color: #fff;
@@ -180,28 +180,41 @@ header .container nav ul li a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.s-projectos .container .lista-projectos .card .project-description a:hover {
+  border: 1px solid #2dd4bf;
+  border-bottom: 5px solid #10b981;
+  background: #FFFFFF;
+  color: #10b981;
+}
 
 .s-conhecimentos {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
 }
 .s-conhecimentos .container .texto-conhecimento {
-  width: 50%;
+  width: 100%;
   height: 50px;
-  background: #047857;
-  box-shadow: 1px 2px 8px #064e3b;
-  border-radius: 10px;
+  background: #10b981;
+  box-shadow: 1px 2px 8px #e2e8f0;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   border-left: 8px solid #fff;
 }
 .s-conhecimentos .container .texto-conhecimento h2 {
-  text-align: center;
-  line-height: 25px;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fffffe;
+  height: 50px;
+  border-radius: 10px;
   font-weight: 700;
   font-size: 32px;
+  display: flex;
   letter-spacing: 2px;
 }
 .s-conhecimentos .container .skills {
@@ -216,18 +229,18 @@ header .container nav ul li a {
   padding: 10px;
   width: 100%;
   max-width: 400px;
-  background: #10b981;
+  background: #fffffe;
   border-radius: 10px;
-  box-shadow: 2px 3px 20px #064e3b;
-  border-left: 10px solid white;
+  box-shadow: 2px 3px 8px #e2e8f0;
+  border-left: 10px solid #34d399;
   justify-content: space-between;
   align-items: center;
 }
 .s-conhecimentos .container .skills .hard-skills .texto-skills {
   width: 100%;
-  background: #047857;
+  background: #10b981;
   border-radius: 10px 0px 10px 0px;
-  box-shadow: 2px 3px 10px #064e3b;
+  box-shadow: 2px 3px 10px #e2e8f0;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -247,18 +260,18 @@ header .container nav ul li a {
   padding: 10px;
   width: 100%;
   max-width: 400px;
-  background: #10b981;
+  background: #fffffe;
   border-radius: 10px;
-  box-shadow: 2px 3px 20px #064e3b;
-  border-left: 10px solid white;
+  box-shadow: 2px 3px 8px #e2e8f0;
+  border-left: 10px solid #34d399;
   justify-content: space-between;
   align-items: center;
 }
 .s-conhecimentos .container .skills .soft-skills .texto-skills {
   width: 100%;
-  background: #047857;
+  background: #10b981;
   border-radius: 10px 0px 10px 0px;
-  box-shadow: 2px 3px 10px #064e3b;
+  box-shadow: 2px 3px 10px #e2e8f0;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -275,20 +288,21 @@ header .container nav ul li a {
   letter-spacing: 10px;
 }
 
-.s-card-experiencia .container {
-  margin-top: 20px;
+.s-card-experiencia {
+  margin-bottom: 50px;
 }
 .s-card-experiencia .container .texto-eperiencia {
-  width: 50%;
+  width: 100%;
   height: 50px;
-  background: #047857;
-  box-shadow: 1px 2px 8px #064e3b;
-  border-radius: 10px;
+  background: #10b981;
+  box-shadow: 1px 2px 8px #e2e8f0;
+  border-radius: 0px 10px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-left: 8px solid #fff;
   padding: 20px;
+  margin-bottom: 15px;
 }
 .s-card-experiencia .container .texto-eperiencia h2 {
   text-align: center;
@@ -366,16 +380,17 @@ footer .texto-bottom p {
 
 .btn-skills {
   padding: 0px 10px 0px 10px;
-  background: #059669;
+  background: #34d399;
   border-radius: 0px 10px 10px 0px;
   font-size: 16px;
   color: #fff;
   text-transform: lowercase;
+  margin: 5px;
 }
 
 .btn-soft {
   padding: 0px 10px 0px 10px;
-  background: #059669;
+  background: #34d399;
   border-radius: 0px 10px 10px 0px;
   color: #fff;
   font-size: 16px;
@@ -386,20 +401,20 @@ footer .texto-bottom p {
 .card-empresa {
   width: 100%;
   height: 200px;
-  background: #1F7ACF;
-  box-shadow: 1px 2px 8px #002C66;
+  background: #10b981;
+  box-shadow: 1px 2px 8px #e2e8f0;
   border-radius: 0px 10px 10px 0px;
   padding: 15px;
   margin: 20px;
-  color: #fff;
+  color: #1e293b;
   border-left: 10px solid #fff;
 }
 .card-empresa h2 {
   margin-top: 10px;
   width: 100%;
   padding: 5px;
-  background: #002C66;
-  box-shadow: 1px 2px 8px #002C66;
+  background: #FFFFFe;
+  box-shadow: 1px 2px 5px #064e3b;
   border-radius: 0px 10px 10px 0px;
   font-size: 16px;
   margin-bottom: 10px;
