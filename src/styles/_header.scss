@@ -2,11 +2,10 @@ header{
     top: 0;
     padding: 15px;
     width: 100%;
-    background-color:#0ea5e9;
-    opacity: 1;
+    background: $Emerald-300;
     box-shadow: 1px 3px 7px #2a353a;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     .container{
         display: flex;
         justify-content: space-between;

@@ -3,11 +3,10 @@ header {
   top: 0;
   padding: 15px;
   width: 100%;
-  background-color: #0ea5e9;
-  opacity: 1;
+  background: #6ee7b7;
   box-shadow: 1px 3px 7px #2a353a;
   position: fixed;
-  z-index: 100;
+  z-index: 10;
 }
 header .container {
   display: flex;
@@ -50,9 +49,9 @@ header .container nav ul li a {
 .s-projectos .container .principal .texto-principal .texto {
   width: 100%;
   max-width: 500px;
-  background: #0ea5e9;
+  background: #10b981;
   border-radius: 0px 10px 10px 0px;
-  box-shadow: 1px 2px 8px #0c4a6e;
+  box-shadow: 1px 2px 8px #065f46;
   padding: 15px;
   margin: 20px;
   -webkit-animation: textoPrincipal 5s ease-in-out infinite;
@@ -235,7 +234,7 @@ header .container nav ul li a {
 .s-conhecimentos .container .texto-obs .container {
   display: flex;
   width: 50%;
-  background: #f87171;
+  background: #047857;
   justify-content: center;
   align-items: center;
   box-shadow: 1px 2px 8px #0c4a6e;
@@ -315,14 +314,14 @@ footer .texto-bottom p {
   width: 100%;
   padding: 10px;
   border-radius: 7px;
-  background: #22d3ee;
+  background: #10b981;
   box-shadow: 1px 3px 7px rgba(42, 53, 58, 0.4784313725);
   outline: none;
 }
 .btn-header:hover {
-  border-bottom: 5px solid #22d3ee;
-  background: #fff;
-  color: #22d3ee;
+  border-bottom: 5px solid #6ee7b7;
+  background: #059669;
+  color: #fff;
 }
 
 .card {
@@ -536,7 +535,7 @@ footer .texto-bottom p {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background: rgb(29, 78, 216);
+  background: #064e3b;
 }
 
 body * {
