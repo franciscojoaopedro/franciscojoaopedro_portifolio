@@ -12,43 +12,44 @@
     }
 }
 .card{
-    top: 20px;
-    position: relative;
-    margin: 2px;
+    // top: 20px;
+    // position: relative;
+    // margin: 2px;
     width: 100%; 
-    height: 200px;
-    background: #38bdf8;
-    border-radius: 10px;
-    box-shadow: 2px 3px 10px #0c4a6e;
+    // height: 250px;
+    // background: $Emerald-300;
+    // border-radius: 10px;
+    // box-shadow: 2px 3px 10px $Emerald-900;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .btn-skills{
     padding: 0px 10px 0px 10px;
-    background: #2563eb;
+    background: $Emerald-600;
     border-radius: 0px 10px 10px 0px;
     font-size: 16px;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: lowercase;
 
 }
 
 .btn-soft{
     padding: 0px 10px 0px 10px;
-    background: #2564ebdc;
+    background: $Emerald-600;
     border-radius: 0px 10px 10px 0px;
     color: #fff;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: 5px;
 }
 
 .card-empresa{
     width: 100%;
     height: 200px;
-    background: #22d3ee;
-    box-shadow: 1px 2px 8px #0c4a6e;
+    background: $Emerald-400;
+    box-shadow: 1px 2px 8px $Emerald-900;
     border-radius: 0px 10px 10px 0px;
     padding: 15px;
     margin: 20px;
@@ -58,8 +59,8 @@
         margin-top: 10px;
         width: 100%;
         padding: 5px;
-        background: #0c4a6e;
-        box-shadow: 1px 2px 8px #0c4a6e;
+        background: $Emerald-600;
+        box-shadow: 1px 2px 8px $Emerald-700;
         border-radius: 0px 10px 10px 0px;
         font-size: 16px;
         margin-bottom: 10px;
@@ -69,14 +70,14 @@
         text-align: center;
         font-size: 16px;
         font-weight: 700;
-        color: #cffafe;
+        color: $Emerald-600;
         margin-bottom: 10px;
     }
     p{
         text-align: start;
         font-size: 16px;
         font-weight: 700;
-        color: #2563eb;
+        color: $Emerald-700;
     }
 }
 

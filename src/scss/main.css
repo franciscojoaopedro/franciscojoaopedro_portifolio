@@ -83,14 +83,16 @@ header .container nav ul li a {
   width: 100%;
 }
 .s-projectos .container .projectos .texto-projectos {
-  width: 100%;
+  width: 50%;
   height: 50px;
-  background: #34d399;
-  box-shadow: 1px 2px 8px #0c4a6e;
+  background: #047857;
+  box-shadow: 1px 2px 8px #064e3b;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  border-left: 8px solid #fff;
 }
 .s-projectos .container .projectos .texto-projectos h2 {
   display: flex;
@@ -104,28 +106,57 @@ header .container nav ul li a {
   display: flex;
   letter-spacing: 2px;
 }
-.s-projectos .container .projectos .lista-projectos {
-  width: 100%;
-  height: 500px;
+.s-projectos .container .projectos .lista-projectos .card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.s-projectos .container .projectos .lista-projectos .card .image-card {
-  width: 80%;
-  margin-bottom: 10px;
+.s-projectos .container .projectos .lista-projectos .card .project-description {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 250px;
+  background: #34d399;
+  box-shadow: 1px 2px 8px #064e3b;
+  border-radius: 0px 10px 10px 0px;
+  padding: 15px;
+  color: #fff;
+  border-right: 10px solid #fff;
 }
-.s-projectos .container .projectos .lista-projectos .card .image-card img {
-  width: 300px;
+.s-projectos .container .projectos .lista-projectos .card .project-description h2 {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  background: #059669;
+  box-shadow: 1px 2px 8px #047857;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
 }
-.s-projectos .container .projectos .lista-projectos .card a {
+.s-projectos .container .projectos .lista-projectos .card .project-description h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #d1fae5;
+  text-align: justify;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.s-projectos .container .projectos .lista-projectos .card .project-description a {
   position: absolute;
+  width: 50%;
   bottom: 0;
   text-align: center;
+  color: #fff;
+  border-radius: 7px 0px 0px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .s-conhecimentos {
@@ -135,23 +166,20 @@ header .container nav ul li a {
   display: flex;
 }
 .s-conhecimentos .container .texto-conhecimento {
-  width: 100%;
-  background: #34d399;
-  border-radius: 10px 0px 10px 0px;
-  box-shadow: 2px 3px 10px #0c4a6e;
-  align-items: center;
-  margin-bottom: 20px;
+  width: 50%;
+  height: 50px;
+  background: #047857;
+  box-shadow: 1px 2px 8px #064e3b;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 8px solid #fff;
 }
 .s-conhecimentos .container .texto-conhecimento h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 25px;
   color: #fff;
-  height: 50px;
-  border-radius: 10px;
   font-weight: 700;
   font-size: 32px;
-  display: flex;
   letter-spacing: 2px;
 }
 .s-conhecimentos .container .skills {
@@ -166,18 +194,18 @@ header .container nav ul li a {
   padding: 10px;
   width: 100%;
   max-width: 400px;
-  background: #67e8f9;
+  background: #10b981;
   border-radius: 10px;
-  box-shadow: 2px 3px 20px #0c4a6e;
+  box-shadow: 2px 3px 20px #064e3b;
   border-left: 10px solid white;
   justify-content: space-between;
   align-items: center;
 }
 .s-conhecimentos .container .skills .hard-skills .texto-skills {
   width: 100%;
-  background: #0f172a;
+  background: #047857;
   border-radius: 10px 0px 10px 0px;
-  box-shadow: 2px 3px 10px #0c4a6e;
+  box-shadow: 2px 3px 10px #064e3b;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -197,18 +225,18 @@ header .container nav ul li a {
   padding: 10px;
   width: 100%;
   max-width: 400px;
-  background: #67e8f9;
+  background: #10b981;
   border-radius: 10px;
-  box-shadow: 2px 3px 20px #0c4a6e;
+  box-shadow: 2px 3px 20px #064e3b;
   border-left: 10px solid white;
   justify-content: space-between;
   align-items: center;
 }
 .s-conhecimentos .container .skills .soft-skills .texto-skills {
   width: 100%;
-  background: #111827;
+  background: #047857;
   border-radius: 10px 0px 10px 0px;
-  box-shadow: 2px 3px 10px #0c4a6e;
+  box-shadow: 2px 3px 10px #064e3b;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -234,10 +262,10 @@ header .container nav ul li a {
 .s-conhecimentos .container .texto-obs .container {
   display: flex;
   width: 50%;
-  background: #047857;
+  background: #10b981;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 2px 8px #0c4a6e;
+  box-shadow: 1px 2px 8px #064e3b;
   border-radius: 10px 0px 10px 0px;
   padding: 15px;
 }
@@ -254,14 +282,16 @@ header .container nav ul li a {
   margin-top: 20px;
 }
 .s-conhecimentos .container .card-experiencia .texto-eperiencia {
-  width: 100%;
+  width: 50%;
   height: 50px;
-  background: #0c4a6e;
-  box-shadow: 1px 2px 8px rgba(12, 74, 110, 0.431372549);
-  border-radius: 10px 0px 10px 0px;
+  background: #047857;
+  box-shadow: 1px 2px 8px #064e3b;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  border-left: 8px solid #fff;
+  padding: 20px;
 }
 .s-conhecimentos .container .card-experiencia .texto-eperiencia h2 {
   text-align: center;
@@ -278,7 +308,7 @@ header .container nav ul li a {
 
 footer {
   padding: 40px 0px 0px 0px;
-  background: #164e63;
+  background: #334155;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -302,12 +332,13 @@ footer .texto-bottom {
   background: #34d399;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 footer .texto-bottom p {
   padding: 15px;
   text-align: center;
   color: #fff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 5px solid #fff;
 }
 
 .btn-header {
@@ -325,42 +356,36 @@ footer .texto-bottom p {
 }
 
 .card {
-  top: 20px;
-  position: relative;
-  margin: 2px;
   width: 100%;
-  height: 200px;
-  background: #38bdf8;
-  border-radius: 10px;
-  box-shadow: 2px 3px 10px #0c4a6e;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .btn-skills {
   padding: 0px 10px 0px 10px;
-  background: #2563eb;
+  background: #059669;
   border-radius: 0px 10px 10px 0px;
   font-size: 16px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .btn-soft {
   padding: 0px 10px 0px 10px;
-  background: rgba(37, 100, 235, 0.862745098);
+  background: #059669;
   border-radius: 0px 10px 10px 0px;
   color: #fff;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin: 5px;
 }
 
 .card-empresa {
   width: 100%;
   height: 200px;
-  background: #22d3ee;
-  box-shadow: 1px 2px 8px #0c4a6e;
+  background: #34d399;
+  box-shadow: 1px 2px 8px #064e3b;
   border-radius: 0px 10px 10px 0px;
   padding: 15px;
   margin: 20px;
@@ -371,8 +396,8 @@ footer .texto-bottom p {
   margin-top: 10px;
   width: 100%;
   padding: 5px;
-  background: #0c4a6e;
-  box-shadow: 1px 2px 8px #0c4a6e;
+  background: #059669;
+  box-shadow: 1px 2px 8px #047857;
   border-radius: 0px 10px 10px 0px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -382,14 +407,14 @@ footer .texto-bottom p {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  color: #cffafe;
+  color: #059669;
   margin-bottom: 10px;
 }
 .card-empresa p {
   text-align: start;
   font-size: 16px;
   font-weight: 700;
-  color: #2563eb;
+  color: #047857;
 }
 
 .contactos {

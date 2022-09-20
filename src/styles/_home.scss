@@ -47,17 +47,20 @@
            position: relative;
             width: 100%;
             .texto-projectos{
-                width: 100%;
+                width: 50%;
                 height: 50px;
-                background: #34d399;
-                box-shadow: 1px 2px 8px #0c4a6e;
+                background: $Emerald-700;
+                box-shadow: 1px 2px 8px $Emerald-900;
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                // border-bottom: 8px solid $Emerald-500;
+                // border-top: 8px solid $Emerald-500;
+                padding: 20px;
+                border-left: 8px solid  #fff;
                 
                 h2{
-                   
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -72,27 +75,57 @@
             }
         
             .lista-projectos{
-                width: 100%;
-                height: 500px;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
-                margin-bottom: 100px;
                 .card{
-                    .image-card{
-                        width: 80%;
-                        margin-bottom: 10px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    .project-description{
+                        position: relative;
                         display: flex;
-                        justify-content: center;
+                        flex-direction: column;
                         align-items: center;
-                        img{
-                            width: 300px;
+                        width: 100%;
+                        height: 250px;
+                        background: $Emerald-400;
+                        box-shadow: 1px 2px 8px $Emerald-900;
+                        border-radius: 0px 10px 10px 0px;
+                        padding: 15px;
+                        color: #fff;
+                        border-right: 10px solid #fff;
+                        h2{
+                            margin-top: 10px;
+                            width: 100%;
+                            padding: 5px;
+                            background: $Emerald-600;
+                            box-shadow: 1px 2px 8px $Emerald-700;
+                            border-radius: 0px 10px 10px 0px;
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                            text-align: center;
                         }
-                    }
-                    a{
-                        position: absolute;
-                        bottom: 0;
-                        text-align: center;
+                        h3{
+                            margin-top: 20px;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: $Emerald-100;
+                            text-align: justify;
+                            letter-spacing: 1px;
+                            margin-bottom: 10px;
+                        
+                        }
+                        a{
+                            position: absolute;
+                            width: 50%;
+                            bottom: 0;
+                            text-align: center;
+                            color: #fff;
+                            border-radius:7px 0px 0px 0px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }
@@ -105,24 +138,22 @@
     margin-bottom: 50px;
     display: flex;
     .container{
+        
         .texto-conhecimento{
-            width:100%;
-            background: #34d399;
-            border-radius: 10px 0px 10px 0px;
-            box-shadow: 2px 3px 10px #0c4a6e;
-            align-items: center;
-            margin-bottom: 20px;
+            width: 50%;
+            height: 50px;
+            background: $Emerald-700;
+            box-shadow: 1px 2px 8px $Emerald-900;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 8px solid  #fff;
             
             h2{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                text-align: center;
+                line-height: 25px;
                 color: #fff;
-                height: 50px;
-                border-radius: 10px;
                 font-weight: 700;
                 font-size: 32px;
-                display: flex;
                 letter-spacing: 2px;
             }
         }
@@ -137,17 +168,17 @@
                 padding: 10px;
                 width: 100%;
                 max-width: 400px;
-                background: #67e8f9;
+                background: $Emerald-500;
                 border-radius: 10px;
-                box-shadow: 2px 3px 20px #0c4a6e;
+                box-shadow: 2px 3px 20px $Emerald-900;
                 border-left: 10px solid white ;
                 justify-content: space-between;
                 align-items: center;
                 .texto-skills{
                     width:100%;
-                    background: #0f172a;
+                    background: $Emerald-700;
                     border-radius: 10px 0px 10px 0px;
-                    box-shadow: 2px 3px 10px #0c4a6e;
+                    box-shadow: 2px 3px 10px $Emerald-900;
                     align-items: center;
                     margin-bottom: 20px;
                 }
@@ -169,17 +200,17 @@
                 padding: 10px;
                 width: 100%;
                 max-width: 400px;
-                background: #67e8f9;
+                background:  $Emerald-500;
                 border-radius: 10px;
-                box-shadow: 2px 3px 20px #0c4a6e;
+                box-shadow: 2px 3px 20px  $Emerald-900;
                 border-left: 10px solid white ;
                 justify-content: space-between;
                 align-items: center;
                 .texto-skills{
                     width:100%;
-                    background: #111827;
+                    background: $Emerald-700;
                     border-radius: 10px 0px 10px 0px;
-                    box-shadow: 2px 3px 10px #0c4a6e;
+                    box-shadow: 2px 3px 10px $Emerald-900;
                     align-items: center;
                     margin-bottom: 20px;
                 }
@@ -206,10 +237,10 @@
             .container{
                 display: flex;
                 width: 50%;
-                background: $Emerald-700;
+                background: $Emerald-500;
                 justify-content: center;
                 align-items: center;
-                box-shadow: 1px 2px 8px #0c4a6e;
+                box-shadow: 1px 2px 8px $Emerald-900;
                 border-radius: 10px 0px 10px 0px;
                 padding: 15px;
                 p{
@@ -228,14 +259,16 @@
         .card-experiencia{
             margin-top: 20px;
             .texto-eperiencia{
-                width: 100%;
+                width: 50%;
                 height: 50px;
-                background: #0c4a6e;
-                box-shadow: 1px 2px 8px #0c4a6e6e;
-                border-radius: 10px 0px 10px 0px;
+                background: $Emerald-700;
+                box-shadow: 1px 2px 8px $Emerald-900;
+                border-radius: 10px;
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
+                border-left: 8px solid  #fff;
+                padding: 20px;
                 h2{
                     text-align: center;
                     color: #fff;
