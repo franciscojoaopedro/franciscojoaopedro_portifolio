@@ -3,8 +3,8 @@ header {
   top: 0;
   padding: 15px;
   width: 100%;
-  background: #6ee7b7;
-  box-shadow: 1px 3px 7px #2a353a;
+  background: #FFFFFE;
+  box-shadow: 1px 3px 7px rgba(238, 238, 238, 0.1333333333);
   position: fixed;
   z-index: 10;
 }
@@ -34,21 +34,57 @@ header .container nav ul li a {
   color: #fff;
 }
 
-.s-projectos .container .principal {
+.s-principal {
+  padding-top: 20px;
+  height: 500px;
   width: 100%;
+}
+.s-principal .container .principal {
   margin-top: 50px;
   margin-bottom: 100px;
+  width: 100%;
 }
-.s-projectos .container .principal .texto-principal {
+.s-principal .container .principal .texto-principal {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
   gap: 32px;
 }
-.s-projectos .container .principal .texto-principal .texto {
+.s-principal .container .principal .texto-principal .texto {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
+  -webkit-animation: textoPrincipal 5s ease-in-out infinite;
+          animation: textoPrincipal 5s ease-in-out infinite;
+}
+.s-principal .container .principal .texto-principal .texto #bem-vindo {
+  margin-bottom: 20px;
+}
+.s-principal .container .principal .texto-principal .texto #apresentation {
+  margin-top: 20px;
+  display: none;
+}
+.s-principal .container .principal .texto-principal .texto h3 {
+  color: #334155;
+}
+.s-principal .container .principal .texto-principal .image {
+  width: 400px;
+  display: flex;
+  margin: 20px;
+}
+.s-principal .container .principal .texto-principal .image img {
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.s-principal .container .principal .texto-principal .texto-obs {
+  -webkit-animation: textoError 6S ease-in-out infinite;
+          animation: textoError 6S ease-in-out infinite;
+}
+.s-principal .container .principal .texto-principal .texto-obs .texto {
+  display: flex;
+  align-items: center;
+  width: 50%;
   background: #10b981;
   border-radius: 0px 10px 10px 0px;
   box-shadow: 1px 2px 8px #065f46;
@@ -57,32 +93,18 @@ header .container nav ul li a {
   -webkit-animation: textoPrincipal 5s ease-in-out infinite;
           animation: textoPrincipal 5s ease-in-out infinite;
 }
-.s-projectos .container .principal .texto-principal .texto h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.s-principal .container .principal .texto-principal .texto-obs .texto p {
   text-align: justify;
-  line-height: 20px;
   word-wrap: break-word;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #fff;
 }
-.s-projectos .container .principal .texto-principal .image {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  margin: 20px;
-}
-.s-projectos .container .principal .texto-principal .image img {
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-}
-.s-projectos .container .projectos {
-  position: relative;
+
+.s-projectos {
+  margin-top: 200px;
   width: 100%;
 }
-.s-projectos .container .projectos .texto-projectos {
+.s-projectos .texto-projectos {
   width: 50%;
   height: 50px;
   background: #047857;
@@ -94,7 +116,7 @@ header .container nav ul li a {
   padding: 20px;
   border-left: 8px solid #fff;
 }
-.s-projectos .container .projectos .texto-projectos h2 {
+.s-projectos .texto-projectos h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,14 +128,14 @@ header .container nav ul li a {
   display: flex;
   letter-spacing: 2px;
 }
-.s-projectos .container .projectos .lista-projectos .card {
+.s-projectos .lista-projectos .card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.s-projectos .container .projectos .lista-projectos .card .project-description {
+.s-projectos .lista-projectos .card .project-description {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -127,7 +149,7 @@ header .container nav ul li a {
   color: #fff;
   border-right: 10px solid #fff;
 }
-.s-projectos .container .projectos .lista-projectos .card .project-description h2 {
+.s-projectos .lista-projectos .card .project-description h2 {
   margin-top: 10px;
   width: 100%;
   padding: 5px;
@@ -138,7 +160,7 @@ header .container nav ul li a {
   margin-bottom: 10px;
   text-align: center;
 }
-.s-projectos .container .projectos .lista-projectos .card .project-description h3 {
+.s-projectos .lista-projectos .card .project-description h3 {
   margin-top: 20px;
   text-align: center;
   font-size: 16px;
@@ -148,7 +170,7 @@ header .container nav ul li a {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.s-projectos .container .projectos .lista-projectos .card .project-description a {
+.s-projectos .lista-projectos .card .project-description a {
   position: absolute;
   width: 50%;
   bottom: 0;
@@ -252,36 +274,11 @@ header .container nav ul li a {
   display: flex;
   letter-spacing: 10px;
 }
-.s-conhecimentos .container .texto-obs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-animation: textoError 6S ease-in-out infinite;
-          animation: textoError 6S ease-in-out infinite;
-}
-.s-conhecimentos .container .texto-obs .container {
-  display: flex;
-  width: 50%;
-  background: #10b981;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 2px 8px #064e3b;
-  border-radius: 10px 0px 10px 0px;
-  padding: 15px;
-}
-.s-conhecimentos .container .texto-obs .container p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  word-wrap: break-word;
-  letter-spacing: 2px;
-  color: #fff;
-}
-.s-conhecimentos .container .card-experiencia {
+
+.s-card-experiencia .container {
   margin-top: 20px;
 }
-.s-conhecimentos .container .card-experiencia .texto-eperiencia {
+.s-card-experiencia .container .texto-eperiencia {
   width: 50%;
   height: 50px;
   background: #047857;
@@ -293,52 +290,51 @@ header .container nav ul li a {
   border-left: 8px solid #fff;
   padding: 20px;
 }
-.s-conhecimentos .container .card-experiencia .texto-eperiencia h2 {
+.s-card-experiencia .container .texto-eperiencia h2 {
   text-align: center;
   color: #fff;
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 10px;
 }
-.s-conhecimentos .container .card-experiencia .container {
+.s-card-experiencia .container .card-experiencia-empresa {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
-  padding: 40px 0px 0px 0px;
-  background: #334155;
+  padding: 30px 0px 0px 0px;
+  background: #e2e8f0;
   position: relative;
   bottom: 0;
   width: 100%;
+  border-top: 7px solid #34d399;
 }
 footer .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
-footer .container .social h2 {
-  color: #fff;
-  text-align: center;
+footer .container .minha-image {
+  width: 50%;
 }
-footer .container .social nav ul li a {
-  color: #fff;
-  margin: 5px;
+footer .container .minha-image .image {
+  width: 200px;
 }
 footer .texto-bottom {
   margin-top: 20px;
   width: 100%;
   max-width: 100%;
-  background: #34d399;
+  background: #FFFFFE;
   justify-content: center;
   align-items: center;
+  box-shadow: 7px 8px 32px #e2e8f0;
   padding: 20px;
 }
 footer .texto-bottom p {
   padding: 15px;
   text-align: center;
-  color: #fff;
-  border-bottom: 5px solid #fff;
+  color: #34d399;
+  border-bottom: 7px solid #34d399;
 }
 
 .btn-header {
@@ -346,13 +342,19 @@ footer .texto-bottom p {
   padding: 10px;
   border-radius: 7px;
   background: #10b981;
-  box-shadow: 1px 3px 7px rgba(42, 53, 58, 0.4784313725);
+  box-shadow: 1px 3px 2px #e2e8f0;
+  color: #FFFFFF;
+  line-height: 23px;
+  font-weight: 700;
   outline: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .btn-header:hover {
-  border-bottom: 5px solid #6ee7b7;
-  background: #059669;
-  color: #fff;
+  border: 1px solid #2dd4bf;
+  border-bottom: 5px solid #10b981;
+  background: #FFFFFF;
+  color: #10b981;
 }
 
 .card {
@@ -384,8 +386,8 @@ footer .texto-bottom p {
 .card-empresa {
   width: 100%;
   height: 200px;
-  background: #34d399;
-  box-shadow: 1px 2px 8px #064e3b;
+  background: #1F7ACF;
+  box-shadow: 1px 2px 8px #002C66;
   border-radius: 0px 10px 10px 0px;
   padding: 15px;
   margin: 20px;
@@ -396,8 +398,8 @@ footer .texto-bottom p {
   margin-top: 10px;
   width: 100%;
   padding: 5px;
-  background: #059669;
-  box-shadow: 1px 2px 8px #047857;
+  background: #002C66;
+  box-shadow: 1px 2px 8px #002C66;
   border-radius: 0px 10px 10px 0px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -407,91 +409,41 @@ footer .texto-bottom p {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  color: #059669;
+  color: #FFFFFF;
   margin-bottom: 10px;
 }
 .card-empresa p {
   text-align: start;
   font-size: 16px;
   font-weight: 700;
-  color: #047857;
+  color: #FFFFFF;
 }
 
-.contactos {
+.contactos, .social {
   width: 100%;
-  background: #d4d4d8;
-  box-shadow: 1px 2px 8px #0c4a6e;
-  border-radius: 10px 10px 10px 0px;
-  padding: 15px;
-  margin: 15px;
+  margin: 5px;
 }
-.contactos h2 {
+.contactos h2, .social h2 {
   margin-top: 10px;
   padding: 5px;
-  background: #0c4a6e;
-  box-shadow: 1px 2px 8px #335163;
+  background: #10b981;
+  box-shadow: 1px 2px 10px #e2e8f0;
   border-radius: 0px 10px 10px 0px;
   font-size: 18px;
   margin-bottom: 10px;
   color: #fff;
 }
-.contactos ul {
-  background: #2563eb;
-  box-shadow: 1px 2px 8px #335163;
-  border-radius: 10px 10px 10px 0px;
+.contactos ul, .social ul {
+  background: #2dd4bf;
+  box-shadow: 1px 2px 8px #e2e8f0;
+  border-radius: 0px 10px 10px 0px;
   padding: 15px;
 }
-.contactos ul li {
+.contactos ul li h3, .social ul li h3 {
   color: #fff;
   font-size: 16px;
   display: flex;
   align-items: flex-end;
-}
-.contactos ul li a {
-  text-align: start;
-  font-weight: 700;
-  color: #fff;
-}
-
-.mensagem {
-  width: 100%;
-  background: #d4d4d8;
-  box-shadow: 1px 2px 8px #0c4a6e;
-  border-radius: 10px 10px 10px 0px;
-  padding: 15px;
-  margin: 15px;
-}
-.mensagem h2 {
-  margin-top: 10px;
-  padding: 5px;
-  background: #0c4a6e;
-  box-shadow: 1px 2px 8px #335163;
-  border-radius: 0px 10px 10px 0px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.mensagem .sms {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background: #2563eb;
-  box-shadow: 1px 2px 8px #335163;
-  border-radius: 0px 10px 0px 10px;
-  width: 100%;
-}
-.mensagem .sms p {
-  margin: 10px;
-  text-align: center;
-  word-wrap: break-word;
-  font-size: 16px;
-  color: #fff;
-}
-
-.barra {
-  height: 300px;
-  border-right: 5px solid white;
 }
 
 @-webkit-keyframes textoPrincipal {
@@ -560,11 +512,12 @@ footer .texto-bottom p {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background: #064e3b;
+  background: #e2e8f0;
 }
 
 body * {
   font-family: "Ubuntu", sans-serif;
+  line-height: 23px;
 }
 
 .container {

@@ -1,9 +1,12 @@
-.s-projectos{
+.s-principal{
+   padding-top: 20px;
+    height: 500px;
+    width: 100%;
     .container{
         .principal{
-            width: 100%;
             margin-top: 50px;
             margin-bottom: 100px;
+            width: 100%;
             .texto-principal{
                 display: flex;
                 justify-content: center;
@@ -12,27 +15,21 @@
                 gap: 32px;
                 .texto{
                     width: 100%;
-                    max-width: 500px;
-                    background: $Emerald-500;
-                    border-radius: 0px 10px 10px 0px;
-                    box-shadow: 1px 2px 8px $Emerald-800;
-                    padding: 15px;
-                    margin: 20px;
+                    max-width: 400px;
                     animation: textoPrincipal 5s ease-in-out infinite;
-                    h2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: justify;
-                    line-height: 20px;
-                    word-wrap: break-word;
-                    letter-spacing: 1px;
-                    color: #fff;
+                    #bem-vindo{
+                    margin-bottom: 20px;
+                    }
+                    #apresentation{
+                        margin-top: 20px;
+                        display: none;
+                    }
+                    h3{
+                        color: #334155;
                     }
                 }
                 .image{
-                    width: 100%;
-                    max-width: 500px;
+                    width: 400px;
                     display: flex;
                     margin: 20px;
                     img{
@@ -41,97 +38,122 @@
                       justify-content: center;
                     }
                 }
-            }
-        }
-        .projectos{
-           position: relative;
-            width: 100%;
-            .texto-projectos{
-                width: 50%;
-                height: 50px;
-                background: $Emerald-700;
-                box-shadow: 1px 2px 8px $Emerald-900;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                // border-bottom: 8px solid $Emerald-500;
-                // border-top: 8px solid $Emerald-500;
-                padding: 20px;
-                border-left: 8px solid  #fff;
-                
-                h2{
+                .texto-obs{
+                    animation: textoError 6S ease-in-out infinite;
+                    .texto{
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-                    color: #fff;
-                    height: 50px;
-                    border-radius: 10px;
-                    font-weight: 700;
-                    font-size: 32px;
-                    display: flex;
-                    letter-spacing: 2px;
-                }
-            }
-        
-            .lista-projectos{
-                .card{
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 10px;
-                    margin-top: 20px;
-                    margin-bottom: 30px;
-                    .project-description{
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        width: 100%;
-                        height: 250px;
-                        background: $Emerald-400;
-                        box-shadow: 1px 2px 8px $Emerald-900;
-                        border-radius: 0px 10px 10px 0px;
-                        padding: 15px;
-                        color: #fff;
-                        border-right: 10px solid #fff;
-                        h2{
-                            margin-top: 10px;
-                            width: 100%;
-                            padding: 5px;
-                            background: $Emerald-600;
-                            box-shadow: 1px 2px 8px $Emerald-700;
-                            border-radius: 0px 10px 10px 0px;
-                            font-size: 18px;
-                            margin-bottom: 10px;
-                            text-align: center;
-                        }
-                        h3{
-                            margin-top: 20px;
-                            text-align: center;
-                            font-size: 16px;
-                            font-weight: 700;
-                            color: $Emerald-100;
+                    width: 50%;
+                    background: $Emerald-500;
+                    border-radius: 0px 10px 10px 0px;
+                    box-shadow: 1px 2px 8px $Emerald-800;
+                    padding: 15px;
+                    margin: 20px;
+                    animation: textoPrincipal 5s ease-in-out infinite;
+                        p{
                             text-align: justify;
-                            letter-spacing: 1px;
-                            margin-bottom: 10px;
-                        
-                        }
-                        a{
-                            position: absolute;
-                            width: 50%;
-                            bottom: 0;
-                            text-align: center;
-                            color: #fff;
-                            border-radius:7px 0px 0px 0px;
-                            margin-top: 10px;
-                            margin-bottom: 10px;
+                            word-wrap: break-word;
+                            letter-spacing: 2px;
+                            color: #fff; 
                         }
                     }
                 }
             }
         }
+
     }
 }
+
+.s-projectos{
+        margin-top: 200px;
+         width: 100%;
+         .texto-projectos{
+             width: 50%;
+             height: 50px;
+             background: $Emerald-700;
+             box-shadow: 1px 2px 8px $Emerald-900;
+             border-radius: 10px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             // border-bottom: 8px solid $Emerald-500;
+             // border-top: 8px solid $Emerald-500;
+             padding: 20px;
+             border-left: 8px solid  #fff;
+             
+             h2{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 color: #fff;
+                 height: 50px;
+                 border-radius: 10px;
+                 font-weight: 700;
+                 font-size: 32px;
+                 display: flex;
+                 letter-spacing: 2px;
+             }
+         }
+     
+         .lista-projectos{
+             .card{
+                 display: grid;
+                 grid-template-columns: repeat(3, 1fr);
+                 gap: 10px;
+                 margin-top: 20px;
+                 margin-bottom: 30px;
+                 .project-description{
+                     position: relative;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     width: 100%;
+                     height: 250px;
+                     background: $Emerald-400;
+                     box-shadow: 1px 2px 8px $Emerald-900;
+                     border-radius: 0px 10px 10px 0px;
+                     padding: 15px;
+                     color: #fff;
+                     border-right: 10px solid #fff;
+                     h2{
+                         margin-top: 10px;
+                         width: 100%;
+                         padding: 5px;
+                         background: $Emerald-600;
+                         box-shadow: 1px 2px 8px $Emerald-700;
+                         border-radius: 0px 10px 10px 0px;
+                         font-size: 18px;
+                         margin-bottom: 10px;
+                         text-align: center;
+                     }
+                     h3{
+                         margin-top: 20px;
+                         text-align: center;
+                         font-size: 16px;
+                         font-weight: 700;
+                         color: $Emerald-100;
+                         text-align: justify;
+                         letter-spacing: 1px;
+                         margin-bottom: 10px;
+                     
+                     }
+                     a{
+                         position: absolute;
+                         width: 50%;
+                         bottom: 0;
+                         text-align: center;
+                         color: #fff;
+                         border-radius:7px 0px 0px 0px;
+                         margin-top: 10px;
+                         margin-bottom: 10px;
+                     }
+                 }
+             }
+         }
+
+}
+
+
 .s-conhecimentos{
     width: 100%;
     margin-top: 20px;
@@ -229,60 +251,35 @@
             }
 
         }
-        .texto-obs{
+        
+    }
+}
+
+.s-card-experiencia{
+    .container{
+        margin-top: 20px;
+        .texto-eperiencia{
+            width: 50%;
+            height: 50px;
+            background: $Emerald-700;
+            box-shadow: 1px 2px 8px $Emerald-900;
+            border-radius: 10px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            animation: textoError 6S ease-in-out infinite;
-            .container{
-                display: flex;
-                width: 50%;
-                background: $Emerald-500;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 1px 2px 8px $Emerald-900;
-                border-radius: 10px 0px 10px 0px;
-                padding: 15px;
-                p{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: justify;
-                    word-wrap: break-word;
-                    letter-spacing: 2px;
-                    color: #fff;
-                   
-                }
+            justify-content: center;
+            border-left: 8px solid  #fff;
+            padding: 20px;
+            h2{
+                text-align: center;
+                color: #fff;
+                font-weight: 700;
+                font-size: 32px;
+                letter-spacing: 10px;
             }
         }
-
-        .card-experiencia{
-            margin-top: 20px;
-            .texto-eperiencia{
-                width: 50%;
-                height: 50px;
-                background: $Emerald-700;
-                box-shadow: 1px 2px 8px $Emerald-900;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-left: 8px solid  #fff;
-                padding: 20px;
-                h2{
-                    text-align: center;
-                    color: #fff;
-                    font-weight: 700;
-                    font-size: 32px;
-                    letter-spacing: 10px;
-                }
-
-            }
-            .container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .card-experiencia-empresa{
+            display: flex;
         }
+
     }
 }

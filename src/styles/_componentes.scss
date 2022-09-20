@@ -3,12 +3,18 @@
     padding: 10px;
     border-radius: 7px;
     background: $Emerald-500;
-    box-shadow: 1px 3px 7px #2a353a7a;
+    box-shadow: 1px 3px 2px #e2e8f0;
+    color: #FFFFFF;
+    line-height: 23px;
+    font-weight: 700;
     outline: none;
+    transition:  all .5s ease-in-out;
+    cursor: pointer;
     &:hover{
-        border-bottom: 5px solid $Emerald-300;
-        background:$Emerald-600;
-        color: #fff;
+        border: 1px solid #2dd4bf;
+        border-bottom: 5px solid $Emerald-500;
+        background:#FFFFFF;
+        color: $Emerald-500;
     }
 }
 .card{
@@ -48,8 +54,8 @@
 .card-empresa{
     width: 100%;
     height: 200px;
-    background: $Emerald-400;
-    box-shadow: 1px 2px 8px $Emerald-900;
+    background: #1F7ACF;
+    box-shadow: 1px 2px 8px #002C66;
     border-radius: 0px 10px 10px 0px;
     padding: 15px;
     margin: 20px;
@@ -59,8 +65,8 @@
         margin-top: 10px;
         width: 100%;
         padding: 5px;
-        background: $Emerald-600;
-        box-shadow: 1px 2px 8px $Emerald-700;
+        background:  #002C66;
+        box-shadow: 1px 2px 8px  #002C66;
         border-radius: 0px 10px 10px 0px;
         font-size: 16px;
         margin-bottom: 10px;
@@ -70,89 +76,42 @@
         text-align: center;
         font-size: 16px;
         font-weight: 700;
-        color: $Emerald-600;
+        color:#FFFFFF;
         margin-bottom: 10px;
     }
     p{
         text-align: start;
         font-size: 16px;
         font-weight: 700;
-        color: $Emerald-700;
+        color: #FFFFFF;
     }
 }
 
-.contactos{
+.contactos, .social{
     width: 100%;
-    background: #d4d4d8;
-    box-shadow: 1px 2px 8px #0c4a6e;
-    border-radius: 10px 10px 10px 0px;
-    padding: 15px;
-    margin: 15px;
+    margin: 5px;
     h2{
         margin-top: 10px;
         padding: 5px;
-        background: #0c4a6e;
-        box-shadow: 1px 2px 8px #335163;
-        border-radius: 0px 10px 10px 0px;
+        background:  $Emerald-500;
+        box-shadow: 1px 2px 10px #e2e8f0;
+        border-radius: 0px 10px 10px 0px ;
         font-size: 18px;
         margin-bottom: 10px;
         color: #fff;
     }
     ul{
-        background: #2563eb;
-        box-shadow: 1px 2px 8px #335163;
-        border-radius: 10px 10px 10px 0px;
+        background: #2dd4bf;
+        box-shadow: 1px 2px 8px #e2e8f0;
+        border-radius: 0px 10px 10px 0px;
         padding: 15px;
         li{
-            color: #fff;
-            font-size: 16px;
-            display: flex;
-            align-items: flex-end;
-            a{
-                text-align: start;
-                font-weight: 700;
-                color: #fff;   
+            h3{
+                color: #fff;
+                font-size: 16px;
+                display: flex;
+                align-items: flex-end;
             }
         }
     }
-}
-.mensagem{
-    width: 100%;
-    background: #d4d4d8;
-    box-shadow: 1px 2px 8px #0c4a6e;
-    border-radius: 10px 10px 10px 0px;
-    padding: 15px;
-    margin: 15px;
-    h2{
-        margin-top: 10px;
-        padding: 5px;
-        background: #0c4a6e;
-        box-shadow: 1px 2px 8px #335163;
-        border-radius: 0px 10px 10px 0px;
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: #fff;
-    }
-    .sms{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        background: #2563eb;
-        box-shadow: 1px 2px 8px #335163;
-        border-radius: 0px 10px 0px 10px;
-        width: 100%;
-        p{
-            margin: 10px;
-            text-align: center;
-            word-wrap: break-word;
-            font-size: 16px;
-            color: #fff;
-        }
-    }
-}
-
-.barra{
-    height: 300px;
-    border-right: 5px solid white;
 }
