@@ -512,7 +512,7 @@ footer .texto-bottom p {
     transform: translateY(0px);
   }
 }
-@media (min-width: 390px) {
+@media (max-width: 600px) {
   .btn-header {
     width: 50%;
     cursor: pointer;

@@ -1,8 +1,8 @@
 $computador:900px;
 $tabletes:750px;
-$telefones:390px;
+$telefones:600px;
 
-@media  (min-width: $telefones) {
+@media  (max-width: $telefones) {
     .btn-header {
         width: 50%;
         
