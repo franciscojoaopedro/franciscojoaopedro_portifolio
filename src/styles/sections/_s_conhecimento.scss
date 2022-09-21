@@ -1,0 +1,116 @@
+.s-conhecimentos{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    .container{
+        .texto-conhecimento{
+            width: 100%;
+            height: 50px;
+            background: $Emerald-500;
+            box-shadow: 1px 2px 8px #e2e8f0;
+            border-radius: 0px 10px 10px 0px  ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-left: 8px solid  #fff;
+            
+            h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fffffe;
+                height: 50px;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 32px;
+                display: flex;
+                letter-spacing: 2px;
+            }
+        }
+        .skills{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .hard-skills{
+                padding: 10px;
+                width: 100%;
+                max-width: 400px;
+                background: #fffffe;
+                border-radius: 10px;
+                box-shadow: 2px 3px 8px  #e2e8f0;
+                border-left: 10px solid $Emerald-400 ;
+                justify-content: space-between;
+                align-items: center;
+                .texto-skills{
+                    width:100%;
+                    background: $Emerald-500;
+                    border-radius: 10px 0px 10px 0px;
+                    box-shadow: 2px 3px 10px #e2e8f0;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                h2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    height: 50px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    display: flex;
+                    letter-spacing: 10px;
+                }
+            }
+
+            .soft-skills{
+                padding: 10px;
+                width: 100%;
+                max-width: 400px;
+                background: #fffffe;
+                border-radius: 10px;
+                box-shadow: 2px 3px 8px  #e2e8f0;
+                border-left: 10px solid $Emerald-400 ;
+                justify-content: space-between;
+                align-items: center;
+                .texto-skills{
+                    width:100%;
+                    background: $Emerald-500;
+                    border-radius: 10px 0px 10px 0px;
+                    box-shadow: 2px 3px 10px #e2e8f0;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                h2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    height: 50px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    display: flex;
+                    letter-spacing: 10px;
+                }
+            }
+
+        }
+        
+    }
+    @include responsive(600px){
+        .skills{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}
+

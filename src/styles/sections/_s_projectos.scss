@@ -1,0 +1,100 @@
+
+.s-projectos{
+    .container{
+        margin-top: 200px;
+         width: 100%;
+         .texto-projectos{
+             width: 100%;
+             height: 50px;
+             background:#64748b;
+             box-shadow: 1px 2px 8px #e2e8f0;
+             border-radius: 0px 10px 10px 0px  ;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             padding: 20px;
+             border-left: 8px solid  #fff;
+             
+             h2{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 color: #fffffe;
+                 height: 50px;
+                 border-radius: 10px;
+                 font-weight: 700;
+                 font-size: 20px;
+                 
+                
+             }
+         }
+     
+         .lista-projectos{
+             .card{
+                 display: grid;
+                 grid-template-columns: repeat(3, 1fr);
+                 gap: 10px;
+                 margin-top: 20px;
+                 margin-bottom: 30px;
+                 .project-description{
+                     position: relative;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     width: 100%;
+                     height: 250px;
+                     background: #fffffe;
+                     box-shadow: 1px 2px 8px #e2e8f0;
+                     border-radius: 0px 10px 10px 0px;
+                     padding: 15px;
+                     color: #fff;
+                     border-right: 10px solid #fff;
+                     h2{
+                         margin-top: 10px;
+                         width: 100%;
+                         padding: 5px;
+                         background: $Emerald-500;
+                         box-shadow: 1px 2px 8px $Emerald-700;
+                         border-radius: 0px 10px 10px 0px;
+                         font-size: 18px;
+                         margin-bottom: 10px;
+                         text-align: center;
+                     }
+                     h3{
+                         margin-top: 20px;
+                         text-align: center;
+                         font-size: 16px;
+                         font-weight: 700;
+                         color:#64748b;
+                         text-align: justify;
+                         letter-spacing: 1px;
+                         margin-bottom: 10px;
+                     
+                     }
+                     a{
+                         position: absolute;
+                         width: 100%;
+                         bottom: 0;
+                         text-align: center;
+                         color: #fff;
+                         border-radius:7px 0px 0px 0px;
+                         margin-top: 10px;
+                         margin-bottom: 10px;
+                         &:hover{
+                            border: 1px solid #2dd4bf;
+                            border-bottom: 5px solid $Emerald-500;
+                            background:#FFFFFF;
+                            color: $Emerald-500;
+                        }
+                     }
+                 }
+             }
+         }
+
+        }
+        @include responsive(600px){
+
+       }
+
+    
+}

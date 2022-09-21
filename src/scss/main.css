@@ -34,13 +34,8 @@ header .container nav ul li a {
   color: #fff;
 }
 
-.s-principal {
-  padding-top: 20px;
-  height: 500px;
-  width: 100%;
-}
 .s-principal .container .principal {
-  margin-top: 50px;
+  margin-top: 200px;
   margin-bottom: 100px;
   width: 100%;
 }
@@ -99,6 +94,16 @@ header .container nav ul li a {
   letter-spacing: 2px;
   color: #fff;
 }
+@media (max-width: 600px) {
+  .s-principal .container .texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .s-principal .container .texto-principal .texto {
+    text-align: justify;
+  }
+}
 
 .s-projectos .container {
   margin-top: 200px;
@@ -107,7 +112,7 @@ header .container nav ul li a {
 .s-projectos .container .texto-projectos {
   width: 100%;
   height: 50px;
-  background: #10b981;
+  background: #64748b;
   box-shadow: 1px 2px 8px #e2e8f0;
   border-radius: 0px 10px 10px 0px;
   display: flex;
@@ -124,9 +129,7 @@ header .container nav ul li a {
   height: 50px;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 32px;
-  display: flex;
-  letter-spacing: 2px;
+  font-size: 20px;
 }
 .s-projectos .container .lista-projectos .card {
   display: grid;
@@ -165,7 +168,7 @@ header .container nav ul li a {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  color: #1e293b;
+  color: #64748b;
   text-align: justify;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -186,7 +189,6 @@ header .container nav ul li a {
   background: #FFFFFF;
   color: #10b981;
 }
-
 .s-conhecimentos {
   width: 100%;
   margin-top: 50px;
@@ -287,6 +289,15 @@ header .container nav ul li a {
   display: flex;
   letter-spacing: 10px;
 }
+@media (max-width: 600px) {
+  .s-conhecimentos .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
 
 .s-card-experiencia {
   margin-bottom: 50px;
@@ -313,6 +324,13 @@ header .container nav ul li a {
 }
 .s-card-experiencia .container .card-experiencia-empresa {
   display: flex;
+}
+@media (max-width: 600px) {
+  .s-card-experiencia .container .card-experiencia-empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 footer {
@@ -349,6 +367,12 @@ footer .texto-bottom p {
   text-align: center;
   color: #34d399;
   border-bottom: 7px solid #34d399;
+}
+@media (max-width: 600px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .btn-header {
@@ -405,7 +429,6 @@ footer .texto-bottom p {
   box-shadow: 1px 2px 8px #e2e8f0;
   border-radius: 0px 10px 10px 0px;
   padding: 15px;
-  margin: 20px;
   color: #1e293b;
   border-left: 10px solid #fff;
 }
@@ -510,60 +533,6 @@ footer .texto-bottom p {
   }
   100% {
     transform: translateY(0px);
-  }
-}
-@media (max-width: 750px) {
-  .btn-header {
-    width: 50%;
-    cursor: pointer;
-  }
-  header .container .logo .texto-logo img {
-    width: 100px;
-  }
-  header .container nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  header .container nav ul li {
-    margin: 2px;
-    align-items: flex-end;
-  }
-  header .container nav ul li a {
-    display: flex;
-    text-align: center;
-    padding: 4px;
-    line-height: 10px;
-  }
-  .s-projectos .container #meus-projectos {
-    font-size: 14px;
-  }
-  .s-projectos .container .lista-projectos .card {
-    display: flex;
-    flex-direction: column;
-  }
-  .s-conhecimentos .container .texto-conhecimento h2 {
-    font-size: 14px;
-    line-height: 23px;
-  }
-  .s-conhecimentos .container .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .s-card-experiencia .container .texto-eperiencia h2 {
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 23px;
-  }
-  .s-card-experiencia .container .card-experiencia-empresa {
-    display: flex;
-    flex-direction: column;
-  }
-  footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 * {

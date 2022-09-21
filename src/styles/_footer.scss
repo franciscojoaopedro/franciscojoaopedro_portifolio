@@ -33,4 +33,11 @@ footer{
           border-bottom: 7px solid #34d399;
         }
     }
+
+    @include responsive(600px){
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
