@@ -1,6 +1,6 @@
 $computador:900px;
 $tabletes:750px;
-$telefones:600px;
+$telefones:750px;
 
 @media  (max-width: $telefones) {
     .btn-header {
@@ -20,10 +20,19 @@ $telefones:600px;
         }
         nav{
             ul{
-                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
                 li{
+                    margin: 2px;
+                    align-items: flex-end;
                     a{
-                    font-size: 16px;
+                    display: flex;
+                    text-align: center;
+                    padding: 4px;
+                    line-height: 10px;
+
                     }
                 }
             }
