@@ -13,15 +13,18 @@
     font-weight: 700;
 }
 body{
-    font-family: "Ubuntu",sans-serif;
+    
     background: #e2e8f0;
 }
 body *{
     font-family: "Poppins",sans-serif;
-    line-height:23px;
+    box-sizing: border-box;
 }
 .container{
     width: 100%;
-    padding: 0px 10px 0px 10px;
+    max-width: 1246px;
+    padding: 0 15px;
+    margin: 0 auto;
+
    
 }
