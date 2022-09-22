@@ -8,6 +8,16 @@ const option={
     method:"get"
 }
 
+const swiper = new Swiper(".slide", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+
+
 async function BuscarDate(){
     await fetch("https://api.vercel.com/v9/projects",option)
     .then(response=>  response.json())

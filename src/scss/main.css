@@ -49,6 +49,15 @@ header .container nav ul li a {
   }
 }
 
+.s-certificados .container .slide .swiper-wrapper .swiper-slide {
+  width: 100%;
+  border: 2px solid red;
+  margin: 10px;
+}
+.s-certificados .container .slide .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
 .s-principal .container .npm-start {
   margin-top: 70px;
   display: flex;
@@ -299,14 +308,12 @@ header .container nav ul li a {
   border-radius: 10px;
   font-weight: 700;
   font-size: 18px;
-  display: flex;
-  letter-spacing: 10px;
 }
 .s-conhecimentos .container .skills .soft-skills {
   padding: 10px;
   width: 80vh;
   max-width: 300px;
-  background: #fffffe;
+  background: #f1f5f9;
   border-radius: 10px;
   box-shadow: 2px 3px 8px #e2e8f0;
   border-left: 10px solid #34d399;
@@ -330,7 +337,6 @@ header .container nav ul li a {
   border-radius: 10px;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 10px;
 }
 @media (max-width: 600px) {
   .s-conhecimentos .skills {
