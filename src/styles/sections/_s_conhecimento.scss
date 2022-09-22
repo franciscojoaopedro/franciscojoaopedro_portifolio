@@ -3,11 +3,13 @@
     padding: 0px;
     margin-top: 50px;
     margin-bottom: 50px;
-    display: flex;
-    background: red;
     .container{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .texto-conhecimento{
-            width: 100%;
+            width: 80%;
             height: 50px;
             background: #334155;
             box-shadow: 1px 2px 8px #e2e8f0;
@@ -15,31 +17,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 15px;
             border-left: 8px solid  #fff;
-            
+            border-right: 8px solid  #fff;
             h2{
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                text-align: center;
                 color: #fffffe;
                 height: 50px;
                 border-radius: 10px;
                 font-weight: 700;
                 font-size: 18px;
-                display: flex;
-              
+
             }
         }
         .skills{  
+            width: 80%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             gap: 10px;
             margin-top: 15px;
             .hard-skills{
                 padding: 10px;
-                width: 80%;
+                width: 80vh;
+                max-width: 300px;
                 background: #fffffe;
                 border-radius: 10px;
                 box-shadow: 2px 3px 8px  #e2e8f0;
@@ -70,7 +73,8 @@
 
             .soft-skills{
                 padding: 10px;
-                width: 80%;
+                width: 80vh;
+                max-width: 300px;
                 background: #fffffe;
                 border-radius: 10px;
                 box-shadow: 2px 3px 8px  #e2e8f0;
@@ -94,7 +98,6 @@
                     border-radius: 10px;
                     font-weight: 700;
                     font-size: 18px;
-                    display: flex;
                     letter-spacing: 10px;
                 }
             }
@@ -109,6 +112,14 @@
             justify-content: center;
             align-items: center;
             gap: 15px;
+            .soft-skills,.hard-skills{
+                width: 80vh;
+                max-width: 250px;
+                .texto-skills{
+                    width: 80vh;
+                    max-width: 250px;
+                }
+            }
         }
     }
 }
