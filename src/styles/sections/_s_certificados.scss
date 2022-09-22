@@ -18,21 +18,42 @@
             .swiper-wrapper{
                 .swiper-slide{
                     width: 100%;
-                    max-width: 800px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     .images{
-                        width: 600px;
-                        height: 500px;
+                        width: 100%;
+                        max-width: 800px;
                         img{
-                            width: 100%;
+                            width: 100vw;
                         }
                     }
                 }
             }
         
+    }
+    @include responsive(600px){
+        .swiper-wrapper{
+            display: flex;
+           
+            .swiper-slide{
+                width: 100%;
+                max-width: 800px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .images{
+                    width: 300px;
+                  height: 400px;
+
+                    
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
     }
 }
 
