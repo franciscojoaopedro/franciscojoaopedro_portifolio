@@ -9,7 +9,7 @@ const option={
 }
 
 const swiper = new Swiper(".slide", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",

@@ -49,9 +49,21 @@ header .container nav ul li a {
   }
 }
 
+.s-certificados .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-certificados .container .slide {
+  border-top: 7px solid greenyellow;
+  border-bottom: 7px solid greenyellow;
+  background: white;
+  overflow: hidden;
+  overflow: hidden;
+}
 .s-certificados .container .slide .swiper-wrapper .swiper-slide {
   width: 100%;
-  border: 2px solid red;
+  max-width: 600px;
   margin: 10px;
 }
 .s-certificados .container .slide .swiper-wrapper .swiper-slide img {
