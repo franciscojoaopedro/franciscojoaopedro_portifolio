@@ -20,41 +20,33 @@
     }
 }
 
-.btn-skills{
+.btn-skills , .btn-soft{
     padding: 0px 10px 0px 10px;
-    background: $Emerald-400;
+   // background: #FFFFFF;
     border-radius: 0px 10px 10px 0px;
     font-size: 16px;
-    color: #fff;
+    color: #FFFFFF;
     text-transform: lowercase;
-    margin: 5px;
-}
-.btn-soft{
-    padding: 0px 10px 0px 10px;
-    background: $Emerald-400;
-    border-radius: 0px 10px 10px 0px;
-    color: #fff;
-    font-size: 16px;
-    text-transform: lowercase;
-    margin: 5px;
+    font-weight: 700;
+
 }
 
 .card-empresa{
     width: 100%;
     height: 200px;
-    background: $Emerald-500;
+    background: #6ee7b7;
     box-shadow: 1px 2px 8px #e2e8f0;
     border-radius: 0px 10px 10px 0px;
     padding: 15px;
-  
-    color: #1e293b;
     border-left: 10px solid #fff;
+    margin: 15px;
     h2{
+        color: #0f172a;
         margin-top: 10px;
         width: 100%;
         padding: 5px;
-        background:  #FFFFFe;
-        box-shadow: 1px 2px 8px $Emerald-500;
+        background: #FFFFFF ;
+        box-shadow: 1px 2px 8px #6ee7b7;
         border-radius: 0px 10px 10px 0px;
         font-size: 16px;
         margin-bottom: 10px;
@@ -64,7 +56,7 @@
         text-align: center;
         font-size: 16px;
         font-weight: 700;
-        color:#FFFFFF;
+        color: #FFFFFF;
         margin-bottom: 10px;
     }
     p{
@@ -72,6 +64,7 @@
         font-size: 16px;
         font-weight: 700;
         color: #FFFFFF;
+
     }
 }
 

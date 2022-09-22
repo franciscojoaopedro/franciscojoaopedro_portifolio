@@ -10,9 +10,9 @@ const option={
 
 const swiper = new Swiper(".slide", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 60,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".s-certificados .texo-certificados  .swiper-pagination",
       clickable: true,
     },
 });
