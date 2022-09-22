@@ -1,12 +1,14 @@
 .btn-header{
-    width: 100%;
-    padding: 10px;
+    width: 120px;
+    padding: 15px;
     border-radius: 7px;
     background: $Emerald-500;
     box-shadow: 1px 3px 2px #e2e8f0;
     color: #FFFFFF;
-    line-height: 23px;
+    font-size: 14px;
+    text-align: center;
     font-weight: 700;
+    line-height: 7px;
     outline: none;
     transition:  all .5s ease-in-out;
     cursor: pointer;
@@ -16,19 +18,6 @@
         background:#FFFFFF;
         color: $Emerald-500;
     }
-}
-.card{
-    // top: 20px;
-    // position: relative;
-    // margin: 2px;
-    width: 100%; 
-    // height: 250px;
-    // background: $Emerald-300;
-    // border-radius: 10px;
-    // box-shadow: 2px 3px 10px $Emerald-900;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
 }
 
 .btn-skills{

@@ -1,13 +1,15 @@
 .s-conhecimentos{
-    width: 100%;
+    width: 100vw;
+    padding: 0px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
+    background: red;
     .container{
         .texto-conhecimento{
             width: 100%;
             height: 50px;
-            background: $Emerald-500;
+            background: #334155;
             box-shadow: 1px 2px 8px #e2e8f0;
             border-radius: 0px 10px 10px 0px  ;
             display: flex;
@@ -24,22 +26,20 @@
                 height: 50px;
                 border-radius: 10px;
                 font-weight: 700;
-                font-size: 32px;
+                font-size: 18px;
                 display: flex;
-                letter-spacing: 2px;
+              
             }
         }
-        .skills{
-            width: 100%;
-            margin-top: 20px;
-            margin-bottom: 70px;
+        .skills{  
             display: flex;
             justify-content: space-around;
             align-items: center;
+            gap: 10px;
+            margin-top: 15px;
             .hard-skills{
                 padding: 10px;
-                width: 100%;
-                max-width: 400px;
+                width: 80%;
                 background: #fffffe;
                 border-radius: 10px;
                 box-shadow: 2px 3px 8px  #e2e8f0;
@@ -70,8 +70,7 @@
 
             .soft-skills{
                 padding: 10px;
-                width: 100%;
-                max-width: 400px;
+                width: 80%;
                 background: #fffffe;
                 border-radius: 10px;
                 box-shadow: 2px 3px 8px  #e2e8f0;

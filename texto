@@ -32,4 +32,71 @@ Não tenho experencia de trabalho como programador Front-End e nem Back End. At�
                     font-size: 18px;
                     display: flex;
                     letter-spacing: 10px;
-                }
+
+
+
+
+
+
+
+                    <section class="s-projectos container">
+                    <div class="container">
+                        <div  class="texto-projectos">
+                         <h2 id="meus-projectos">Meus Projectos</h2>
+                        </div>
+                        <div class="lista-projectos c">
+                            <div class="card">
+                                <div class="lista-projecto-1">
+                                    <div class="project-description">
+                                        <h2>Portifólio</h2>
+                                        <h3>Esse é o meu projecto de portifólio</h3>
+                                        <a href="https://franciscojoaopedro-dev.vercel.app/"  target="_blank" class="btn-header">
+                                            <i class="material-icons">link</i>
+                                        </a>
+                                    </div>
+                                    <div class="project-description">
+                                        <h2>Weather Now</h2>
+                                        <h3>Weather Now , permite pesquisar o nome de uma cidade, e retornar informações sobre as condições climática da cidade pesquisada.</h3>
+                                        <a href="https://weather-now-one.vercel.app/" target="_blank" class="btn-header">
+                                            <i class="material-icons">link</i>
+                                        </a>
+                                    </div>
+                                    <div class="project-description">
+                                        <h2>TO-DO</h2>
+                                        <h3>To-Do, esse projecto foi feito com o objectivo de aprender o DOM.</h3>
+                                        <a href="https://app-todo-kappa.vercel.app/" target="_blank"  class="btn-header">
+                                            <i class="material-icons">link</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="lista-projecto-2">
+                                    <div class="project-description">
+                                        <h2>Landing Page-iPhone</h2>
+                                        <h3>Uma landing page para descrição do iphone.</h3>
+                                        <a href="https://landingpage-iphone.vercel.app/" target="_blank"  class="btn-header">
+                                            <i class="material-icons">link</i>
+                                        </a>
+                                    </div>
+                                    <div class="project-description">
+                                        <h2>Calculadora de Percentagens</h2>
+                                        <h3>Esse projecto é na verdade uma calculadora de Percentagens, fiz para menter a minha pratica em JS</h3>
+                                        <a href="https://percentagem-app.vercel.app/" target="_blank"  class="btn-header">
+                                            <i class="material-icons">link</i>
+                                        </a>
+                                    </div>
+                                    <div class="project-description">
+                                        <h2>Pagina de Login</h2>
+                                        <h3>Pagina de Login, é uma interface para fazer login, objectivo melhorar o conhecimento de css, para construção de interface para os usuários.</h3>
+                                        <a href="https://page-login-omega.vercel.app/" target="_blank"  class="btn-header">
+                                            <i class="material-icons">link</i>
+                                        </a>
+                                    </div>
+                                </div>
+            
+                            </div>
+                    </div>
+                             
+                         </div>
+                         </div>
+            
+                </section>

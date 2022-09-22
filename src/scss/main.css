@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 header {
-  top: 0;
+  top: 0px;
   padding: 15px;
   width: 100%;
   background: #FFFFFE;
   box-shadow: 1px 3px 7px rgba(238, 238, 238, 0.1333333333);
-  position: fixed;
   z-index: 10;
+  margin-bottom: 10px;
 }
 header .container {
   display: flex;
@@ -14,10 +14,7 @@ header .container {
   align-items: center;
 }
 header .container .logo .texto-logo img {
-  width: 200px;
-}
-header .container nav h1 {
-  color: #fff;
+  width: 150px;
 }
 header .container nav ul {
   display: flex;
@@ -26,44 +23,76 @@ header .container nav ul {
 }
 header .container nav ul li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 header .container nav ul li a {
   margin: 0px 20px;
   color: #fff;
 }
+@media (max-width: 736px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  header .container .logo .texto-logo img {
+    width: 180px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  header .container nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .container nav ul li {
+    margin-bottom: 5px;
+  }
+}
 
+.s-principal .container .npm-start {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-principal .container .npm-start #bem-vindo {
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+.s-principal .container .npm-start #em-dev {
+  margin-left: 5px;
+  background: red;
+  margin-bottom: 20px;
+}
 .s-principal .container .principal {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
   width: 100%;
 }
 .s-principal .container .principal .texto-principal {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  gap: 32px;
+  justify-content: center;
 }
 .s-principal .container .principal .texto-principal .texto {
-  width: 100%;
+  width: 80vw;
   max-width: 400px;
   -webkit-animation: textoPrincipal 5s ease-in-out infinite;
           animation: textoPrincipal 5s ease-in-out infinite;
-}
-.s-principal .container .principal .texto-principal .texto #bem-vindo {
-  margin-bottom: 20px;
 }
 .s-principal .container .principal .texto-principal .texto #apresentation {
   margin-top: 20px;
   display: none;
 }
 .s-principal .container .principal .texto-principal .texto h3 {
+  text-align: justify;
+  font-size: 16px;
   color: #334155;
 }
 .s-principal .container .principal .texto-principal .image {
-  width: 400px;
+  width: 80vh;
   display: flex;
   margin: 20px;
 }
@@ -103,10 +132,15 @@ header .container nav ul li a {
   .s-principal .container .texto-principal .texto {
     text-align: justify;
   }
+  .s-principal .container .texto-principal .image {
+    justify-content: center;
+  }
+  .s-principal .container .texto-principal .image img {
+    width: 50vh;
+  }
 }
 
 .s-projectos .container {
-  margin-top: 200px;
   width: 100%;
 }
 .s-projectos .container .texto-projectos {
@@ -132,11 +166,15 @@ header .container nav ul li a {
   font-size: 20px;
 }
 .s-projectos .container .lista-projectos .card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.s-projectos .container .lista-projectos .card .lista-projecto-2, .s-projectos .container .lista-projectos .card .lista-projecto-1 {
+  display: flex;
+  gap: 10px;
 }
 .s-projectos .container .lista-projectos .card .project-description {
   position: relative;
@@ -189,16 +227,19 @@ header .container nav ul li a {
   background: #FFFFFF;
   color: #10b981;
 }
+
 .s-conhecimentos {
-  width: 100%;
+  width: 100vw;
+  padding: 0px;
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
+  background: red;
 }
 .s-conhecimentos .container .texto-conhecimento {
   width: 100%;
   height: 50px;
-  background: #10b981;
+  background: #334155;
   box-shadow: 1px 2px 8px #e2e8f0;
   border-radius: 0px 10px 10px 0px;
   display: flex;
@@ -215,22 +256,19 @@ header .container nav ul li a {
   height: 50px;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 18px;
   display: flex;
-  letter-spacing: 2px;
 }
 .s-conhecimentos .container .skills {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 .s-conhecimentos .container .skills .hard-skills {
   padding: 10px;
-  width: 100%;
-  max-width: 400px;
+  width: 80%;
   background: #fffffe;
   border-radius: 10px;
   box-shadow: 2px 3px 8px #e2e8f0;
@@ -260,8 +298,7 @@ header .container nav ul li a {
 }
 .s-conhecimentos .container .skills .soft-skills {
   padding: 10px;
-  width: 100%;
-  max-width: 400px;
+  width: 80%;
   background: #fffffe;
   border-radius: 10px;
   box-shadow: 2px 3px 8px #e2e8f0;
@@ -376,14 +413,16 @@ footer .texto-bottom p {
 }
 
 .btn-header {
-  width: 100%;
-  padding: 10px;
+  width: 120px;
+  padding: 15px;
   border-radius: 7px;
   background: #10b981;
   box-shadow: 1px 3px 2px #e2e8f0;
   color: #FFFFFF;
-  line-height: 23px;
+  font-size: 14px;
+  text-align: center;
   font-weight: 700;
+  line-height: 7px;
   outline: none;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -393,13 +432,6 @@ footer .texto-bottom p {
   border-bottom: 5px solid #10b981;
   background: #FFFFFF;
   color: #10b981;
-}
-
-.card {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
 }
 
 .btn-skills {
@@ -560,5 +592,5 @@ body * {
 
 .container {
   width: 100%;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 10px 0px 10px;
 }/*# sourceMappingURL=main.css.map */

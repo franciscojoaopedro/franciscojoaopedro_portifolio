@@ -1,32 +1,51 @@
 .s-principal{
      .container{
+        .npm-start{
+            margin-top:70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            #bem-vindo{
+                margin-right: 5px;
+                margin-bottom: 20px;
+                 }
+            #em-dev{
+                margin-left: 5px;
+                background: red;
+                margin-bottom: 20px;
+
+            }
+        }
          .principal{
-             margin-top: 200px;
-             margin-bottom: 100px;
+            display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 20px;
+             margin-bottom: 0px;
              width: 100%;
              .texto-principal{
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 margin-bottom: 50px;
-                 gap: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                  .texto{
-                     width: 100%;
+                     width: 80vw;
                      max-width: 400px;
                      animation: textoPrincipal 5s ease-in-out infinite;
-                     #bem-vindo{
-                     margin-bottom: 20px;
-                     }
                      #apresentation{
                          margin-top: 20px;
                          display: none;
                      }
                      h3{
+                        text-align: justify;
+                        font-size: 16px;
                          color: #334155;
                      }
+
+                    
                  }
                  .image{
-                     width: 400px;
+                     width: 80vh;
                      display: flex;
                      margin: 20px;
                      img{
@@ -68,6 +87,14 @@
                      justify-content: center;
                      .texto{
                          text-align: justify;
+                     }
+
+                     .image{
+                         justify-content: center;
+                        img{
+                            width: 50vh;
+                            
+                        }
                      }
                 }
             }
