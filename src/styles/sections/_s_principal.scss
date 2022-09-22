@@ -1,49 +1,63 @@
 .s-principal{
      .container{
-        .npm-start{
-            margin-top:70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            #bem-vindo{
-                margin-right: 5px;
-                margin-bottom: 20px;
-                 }
-            #em-dev{
-                margin-left: 5px;
-               
-                margin-bottom: 20px;
-
-            }
-        }
+       
          .principal{
-            display: flex;
-             justify-content: center;
-             align-items: center;
              margin-top: 20px;
-             margin-bottom: 0px;
              width: 100%;
              .texto-principal{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
                  .texto{
-                     width: 80vw;
-                     max-width: 400px;
+                     width: 100%;
                      animation: textoPrincipal 5s ease-in-out infinite;
-                     #apresentation{
-                         margin-top: 20px;
-                         display: none;
-                     }
-                     h3{
-                        text-align: justify;
-                        font-size: 16px;
+                     h1{
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+                        text-align: start;
+                        font-size: 32px;
                          color: #334155;
+                         span{
+                            font-size: 40px;
+                            color: $Emerald-500;
+
+                        }
                      }
 
                     
                  }
+                 .texto-sobre-mim{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                   
+                    .btn-sobre-mim{
+                      
+                        .btn-header{
+                            width: 2000px;
+                        }
+                    }
+                    .texto-description{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        margin-bottom: 30px;
+                        p{
+                            margin-top: 15px;
+                           text-align: justify;
+                           font-size: 18px;
+                           color: #334155;
+                          
+                        }
+                        #apresentation{
+                      
+                            display: none;
+                        }
+                    }
+                 }
+
                  .image{
                      width: 80vh;
                      display: flex;

@@ -51,10 +51,6 @@ header .container nav ul li a {
   }
 }
 
-.s-certificados {
-  justify-content: center;
-  align-items: center;
-}
 .s-certificados .texo-certificados {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -70,61 +66,75 @@ header .container nav ul li a {
   color: #334155;
 }
 .s-certificados .container .swiper-wrapper .swiper-slide {
-  width: 500px;
-  max-width: 500px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.s-certificados .container .swiper-wrapper .swiper-slide img {
-  width: 80vh;
+.s-certificados .container .swiper-wrapper .swiper-slide .images {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px;
+}
+.s-certificados .container .swiper-wrapper .swiper-slide .images img {
+  width: 100%;
   max-width: 600px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .slide {
   overflow: hidden;
 }
 
-.s-principal .container .npm-start {
-  margin-top: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.s-principal .container .npm-start #bem-vindo {
-  margin-right: 5px;
-  margin-bottom: 20px;
-}
-.s-principal .container .npm-start #em-dev {
-  margin-left: 5px;
-  margin-bottom: 20px;
-}
 .s-principal .container .principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
-  margin-bottom: 0px;
   width: 100%;
 }
 .s-principal .container .principal .texto-principal {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .s-principal .container .principal .texto-principal .texto {
-  width: 80vw;
-  max-width: 400px;
+  width: 100%;
   -webkit-animation: textoPrincipal 5s ease-in-out infinite;
           animation: textoPrincipal 5s ease-in-out infinite;
 }
-.s-principal .container .principal .texto-principal .texto #apresentation {
-  margin-top: 20px;
-  display: none;
-}
-.s-principal .container .principal .texto-principal .texto h3 {
-  text-align: justify;
-  font-size: 16px;
+.s-principal .container .principal .texto-principal .texto h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: start;
+  font-size: 32px;
   color: #334155;
+}
+.s-principal .container .principal .texto-principal .texto h1 span {
+  font-size: 40px;
+  color: #10b981;
+}
+.s-principal .container .principal .texto-principal .texto-sobre-mim {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.s-principal .container .principal .texto-principal .texto-sobre-mim .btn-sobre-mim .btn-header {
+  width: 2000px;
+}
+.s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description p {
+  margin-top: 15px;
+  text-align: justify;
+  font-size: 18px;
+  color: #334155;
+}
+.s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description #apresentation {
+  display: none;
 }
 .s-principal .container .principal .texto-principal .image {
   width: 80vh;
@@ -439,7 +449,7 @@ footer .texto-bottom p {
 }
 
 .btn-header {
-  width: 120px;
+  width: 130px;
   padding: 15px;
   border-radius: 7px;
   background: #10b981;

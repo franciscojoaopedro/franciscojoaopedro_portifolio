@@ -14,20 +14,23 @@
 
         }
     }
-    justify-content: center;
-    align-items: center;
     .container{
             .swiper-wrapper{
                 .swiper-slide{
-                    width: 500px;
-                    max-width: 500px;
-                    img{
-                        width: 80vh;
-                        max-width: 600px;
-                        margin-left: 50px;
-                        margin-right: 50px;
-                       
-                        
+                    width: 100%;
+                    max-width: 800px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .images{
+                        width: 100%;
+                        max-width: 1000px;
+                        margin: 50px;
+                        img{
+                            width: 100%;
+                            max-width: 600px; 
+                        }
                     }
                 }
             }

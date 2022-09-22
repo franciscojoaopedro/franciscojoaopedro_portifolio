@@ -1,5 +1,5 @@
 const token="​nkXqdVdcTQAcWulaSu8G1CLE​"
-const btnBemVindo=document.querySelector('#bem-vindo');
+const btnBemVindo=document.querySelector('#sobre-mim');
 const apresentation=document.querySelector('#apresentation')
 const option={
     headers:{
@@ -10,10 +10,11 @@ const option={
 
 const swiper = new Swiper(".slide", {
     slidesPerView: 3,
-    spaceBetween: 60,
+    spaceBetween: 30,
     pagination: {
       el: ".s-certificados .texo-certificados  .swiper-pagination",
       clickable: true,
+      
     },
 });
 
