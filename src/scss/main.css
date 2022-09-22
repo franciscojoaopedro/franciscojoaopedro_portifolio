@@ -73,13 +73,11 @@ header .container nav ul li a {
   align-items: center;
 }
 .s-certificados .container .swiper-wrapper .swiper-slide .images {
-  width: 100%;
-  max-width: 1000px;
-  margin: 50px;
+  width: 600px;
+  height: 500px;
 }
 .s-certificados .container .swiper-wrapper .swiper-slide .images img {
   width: 100%;
-  max-width: 600px;
 }
 
 .slide {
