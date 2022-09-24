@@ -1,6 +1,5 @@
 .s-principal{
      .container{
-       
          .principal{
              margin-top: 20px;
              width: 100%;
@@ -47,11 +46,12 @@
                         p{
                             margin-top: 15px;
                            text-align: justify;
-                           font-size: 18px;
+                           font-size: 16px;
                            color: #334155;
 
                            span{
-                            color: $Emerald-500;
+                            color: $Emerald-300;
+                            font-size: 16px;
                            }
                           
                         }

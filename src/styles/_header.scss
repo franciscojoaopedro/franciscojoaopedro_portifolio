@@ -8,7 +8,7 @@ header{
     box-shadow: 1px 3px 7px #eee2;
     z-index: 10;
     margin-bottom: 10px;
-    .container{
+.container{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,23 +17,25 @@ header{
                 img{
                     width: 150px;
                 }
-
             }
         }
     
         nav{
-                ul{
+            ul{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    li{
-                        display: flex;
-                        align-items: center;
-                        a{
-                            margin: 0px 20px;
-                            color: #fff;
-                        }
+            li{
+                display: flex;
+                align-items: center;
+                        
+                .btn_active{
+                    &:hover{
+                     
+                        border-bottom: 2px solid #2dd4bf;
                     }
+                }
+            }
                 }
         }
     }
