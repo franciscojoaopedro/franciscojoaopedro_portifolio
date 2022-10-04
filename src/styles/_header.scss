@@ -7,7 +7,9 @@ header{
     background: #FFFFFE;
     box-shadow: 1px 3px 7px #eee2;
     z-index: 10;
+    position: static;
     margin-bottom: 10px;
+
 .container{
         display: flex;
         justify-content: space-between;
