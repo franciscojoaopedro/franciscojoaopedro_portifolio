@@ -104,6 +104,9 @@ header .container nav ul li .btn_active:hover {
   overflow: hidden;
 }
 
+.s-principal {
+  padding-top: 50px;
+}
 .s-principal .container .principal {
   margin-top: 20px;
   width: 100%;
@@ -134,9 +137,6 @@ header .container nav ul li .btn_active:hover {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-}
-.s-principal .container .principal .texto-principal .texto-sobre-mim .btn-sobre-mim .btn-header {
-  width: 2000px;
 }
 .s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description {
   width: 100%;
@@ -283,10 +283,11 @@ header .container nav ul li .btn_active:hover {
   width: 100%;
   bottom: 0;
   text-align: center;
-  color: #fff;
+  color: rgb(145, 57, 57);
   border-radius: 7px 0px 0px 0px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 .s-projectos .container .lista-projectos .card .project-description a:hover {
   border: 1px solid #2dd4bf;
@@ -584,6 +585,7 @@ footer .texto-bottom p {
   font-weight: 700;
   line-height: 7px;
   outline: none;
+  margin-left: 10px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
