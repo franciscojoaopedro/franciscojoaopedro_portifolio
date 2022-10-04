@@ -151,9 +151,8 @@ header .container nav ul li .btn_active:hover {
   font-size: 16px;
   color: #334155;
 }
-.s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description p span {
+.s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description p hr {
   color: #6ee7b7;
-  font-size: 16px;
 }
 .s-principal .container .principal .texto-principal .texto-sobre-mim .texto-description #apresentation {
   display: none;
